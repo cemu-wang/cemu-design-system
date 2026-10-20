@@ -1,6 +1,9 @@
 
+import { useEffect, useState } from "react"
 import { Button } from "./components/Button/Button"
+import "./App.css"
 
+// Figma 中定义的 7 种视觉样式
 const variants = [
   "primary",
   "primaryOutline",
@@ -12,44 +15,77 @@ const variants = [
 ] as const
 
 function App() {
+  const [theme, setTheme] = useState<"light" | "dark">("light")
+
+  // 将颜色模式写入 HTML 根元素
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme
+  }, [theme])
+
   return (
-    <main style={{ padding: 40 }}>
-
-      {variants.map((variant) => (
-        <div
-          key={variant}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 16,
-            marginBottom: 16,
-          }}
-        >
-          <Button variant={variant} size="sm">
-            {variant}
-          </Button>
-
-          <Button variant={variant} size="md">
-            {variant}
-          </Button>
-
-          <Button variant={variant} size="lg">
-            {variant}
-          </Button>
-
-          <Button variant={variant} disabled>
-            Disabled
-          </Button>
+    <main className="preview">
+      <header className="preview__header">
+        <div>
+          <h1>Button</h1>
+          <p>Cemu Design System · Component Playground</p>
         </div>
-      ))}
 
-      <Button
-        iconOnly
-        variant="primary"
-        size="md"
-        startSlot={<span>+</span>}
-        aria-label="新增"
-      />
+        {/* 颜色模式切换 */}
+        <button
+          type="button"
+          className="theme-switch"
+          onClick={() =>
+            setTheme(theme === "light" ? "dark" : "light")
+          }
+        >
+          {theme === "light" ? "🌙 Dark" : "☀️ Light"}
+        </button>
+      </header>
+
+      {/* 遍历所有按钮变体 */}
+      {variants.map((variant) => (
+        <section className="preview__section" key={variant}>
+          <h2>{variant}</h2>
+
+          <div className="preview__row">
+            <Button variant={variant} size="sm">
+              Small
+            </Button>
+
+            <Button variant={variant} size="md">
+              Medium
+            </Button>
+
+            <Button variant={variant} size="lg">
+              Large
+            </Button>
+
+            <Button variant={variant} disabled>
+              Disabled
+            </Button>
+
+            <Button variant={variant} loading>
+              Loading
+            </Button>
+
+            <Button
+              variant={variant}
+              size="md"
+              startSlot={<span>+</span>}
+            >
+              Add item
+            </Button>
+
+            <Button
+              variant={variant}
+              size="md"
+              iconOnly
+              startSlot={<span>+</span>}
+              aria-label="新增项目"
+            />
+          </div>
+        </section>
+      ))}
     </main>
   )
 }

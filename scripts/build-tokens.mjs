@@ -109,13 +109,57 @@ const variables = {
   ),
 }
 
+
+// Dark 模式的语义 Token
+const dark = tokens["ThemeColor/Dark"]
+
+const darkVariables = {
+  "--color-primary": resolve(dark.Background.Primary.default),
+  "--color-primary-foreground": resolve(dark["Text&Shape"].Primary.foreground),
+  "--color-primary-hover": resolve(primary.Dark["primary-muted"]),
+
+  "--color-secondary": resolve(dark.Background.Secondary.default),
+  "--color-secondary-hover": resolve(dark.Background.Secondary.muted),
+  "--color-secondary-foreground": resolve(dark["Text&Shape"].Secondary.foreground),
+
+  "--color-surface": resolve(dark.Background.Nnormal.default),
+  "--color-soft": resolve(dark.Background.Nnormal.muted),
+  "--color-soft-hover": resolve(dark.Background.Nnormal.subtle),
+
+  "--color-text": resolve(dark["Text&Shape"].Nnormal.emphasis),
+  "--color-text-strong": resolve(dark["Text&Shape"].Nnormal.intense),
+  "--color-border": resolve(dark.Border.Nnormal.default),
+  "--color-border-strong": resolve(dark.Border.Nnormal.strong),
+
+  "--color-destructive": resolve(dark.Background.Error.default),
+  "--color-destructive-hover": resolve(dark.Background.Error.muted),
+  "--color-destructive-foreground": resolve(dark["Text&Shape"].Error.foreground),
+
+  "--focus-primary": resolve(dark.Effects["primary-focus-ring"]),
+  "--focus-secondary": resolve(dark.Effects["secondary-focus-ring"]),
+  "--focus-default": resolve(dark.Effects["focus-ring"]),
+  "--focus-destructive": resolve(dark.Effects["error-focus-ring"]),
+}
+
+
+
+// 将 Token 对象转换成 CSS 规则
+function toCSS(selector, values) {
+  return [
+    `${selector} {`,
+    ...Object.entries(values).map(
+      ([name, value]) => `  ${name}: ${value};`
+    ),
+    "}",
+  ].join("\n")
+}
+
+// 同时生成 Light 和 Dark
 const css = [
-  ":root {",
-  ...Object.entries(variables).map(
-    ([name, value]) => `  ${name}: ${value};`
-  ),
-  "}",
-].join("\n")
+  toCSS(":root", variables),
+  toCSS(':root[data-theme="dark"]', darkVariables),
+].join("\n\n")
+
 
 fs.mkdirSync("src/styles", { recursive: true })
 fs.writeFileSync("src/styles/tokens.css", css + "\n")

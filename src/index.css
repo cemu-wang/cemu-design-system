@@ -114,3 +114,29 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+/* 预览页面统一使用设计系统 Token */
+:root[data-theme] {
+  color-scheme: light;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+h1,
+h2 {
+  color: var(--color-text-strong);
+}
+
+#root {
+  border-color: var(--color-border);
+}

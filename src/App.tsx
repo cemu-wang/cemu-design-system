@@ -1,16 +1,56 @@
 
 import { Button } from "./components/Button/Button"
-import "./App.css"
+
+const variants = [
+  "primary",
+  "primaryOutline",
+  "secondary",
+  "soft",
+  "outline",
+  "ghost",
+  "destructive",
+] as const
 
 function App() {
   return (
-    <div>
-      <h1>Cemu Design System</h1>
+    <main style={{ padding: 40 }}>
 
-      <Button text="Primary" variant="primary" />
-      <Button text="Secondary" variant="secondary" />
-      <Button text="Ghost" variant="ghost" />
-    </div>
+      {variants.map((variant) => (
+        <div
+          key={variant}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 16,
+            marginBottom: 16,
+          }}
+        >
+          <Button variant={variant} size="sm">
+            {variant}
+          </Button>
+
+          <Button variant={variant} size="md">
+            {variant}
+          </Button>
+
+          <Button variant={variant} size="lg">
+            {variant}
+          </Button>
+
+          <Button variant={variant} disabled>
+            Disabled
+          </Button>
+        </div>
+      ))}
+
+      <Button
+        iconOnly
+        variant="primary"
+        size="md"
+        startSlot={<span>+</span>}
+        aria-label="新增"
+      />
+    </main>
   )
 }
 

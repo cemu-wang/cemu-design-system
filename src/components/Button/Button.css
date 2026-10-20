@@ -1,0 +1,45 @@
+
+/* 按钮基础样式 */
+.button {
+  height: 40px;
+  padding: 0 var(--spacing-16);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Primary */
+.button--primary {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+/* Secondary */
+.button--secondary {
+  background: var(--color-secondary);
+  color: var(--color-secondary-foreground);
+}
+
+/* Ghost */
+.button--ghost {
+  background: transparent;
+  color: var(--color-primary);
+}
+
+/* Hover */
+.button--primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.button--secondary:hover,
+.button--ghost:hover {
+  opacity: 0.8;
+}
+
+/* Active */
+.button:active {
+  transform: scale(0.98);
+}

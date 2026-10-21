@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite"
 import { expect, fn, within } from "storybook/test"
 import { Button, type ButtonProps } from "./Button"
+import { Text } from "../Text/Text"
 
 function PlusIcon() {
   return (
@@ -184,6 +185,26 @@ export const IconOnlyLoading: Story = {
 
 export const Sizes: Story = {
   parameters: { controls: { disable: true } },
+  play: async ({ canvasElement }) => {
+    const buttons = within(canvasElement).getAllByRole("button")
+    const textSizes = ["xs", "sm", "base"]
+    const heights = [32, 40, 48]
+    const fontSizes = [12, 14, 16]
+    const lineHeights = [16, 20, 24]
+    const iconSizes = [16, 18, 20]
+    for (const [i, size] of sizes.entries()) {
+      const label = buttons[i].querySelector(".button__label")!
+      await expect(label).toHaveClass(`text-${textSizes[i]}-font-medium`)
+      await expect(getComputedStyle(label).fontSize).toBe(`${fontSizes[i]}px`)
+      await expect(getComputedStyle(label).lineHeight).toBe(`${lineHeights[i]}px`)
+      await expect(getComputedStyle(label).fontWeight).toBe("500")
+      for (const button of [buttons[i], buttons[i + 3]]) {
+        await expect(getComputedStyle(button).height).toBe(`${heights[i]}px`)
+        await expect(button.querySelector(".slot")).toHaveClass("slot--icon", `slot--${size}`)
+        await expect(getComputedStyle(button.querySelector("svg")!).width).toBe(`${iconSizes[i]}px`)
+      }
+    }
+  },
   render: () => (
     <div style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
       {sizes.map(size => (
@@ -196,17 +217,6 @@ export const Sizes: Story = {
   ),
 }
 
-export const SlotTypes: Story = {
-  parameters: { controls: { disable: true } },
-  render: () => (
-    <div style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
-      <Button variant="outline" startSlot="🇨🇳" startSlotType="flag">简体中文</Button>
-      <Button variant="outline" endSlot="⌘ K" endSlotType="kbd">Search</Button>
-      <Button variant="outline" endSlot="12" endSlotType="text">Notifications</Button>
-    </div>
-  ),
-}
-
 export const AllVariants: Story = {
   name: "All Variants · 全部样式",
   parameters: { controls: { disable: true }, layout: "padded" },
@@ -214,7 +224,7 @@ export const AllVariants: Story = {
     <div style={{ display: "grid", gap: 24 }}>
       {variants.map(variant => (
         <section key={variant}>
-          <h3 style={{ color: "var(--color-text)", font: "inherit", margin: "0 0 12px" }}>{variant}</h3>
+          <Text as="h3" size="sm" weight="medium" style={{ color: "var(--color-text)", margin: "0 0 12px" }}>{variant}</Text>
           <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
             <Button variant={variant}>Button</Button>
             {sizes.map(size => (

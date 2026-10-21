@@ -1,9 +1,11 @@
 import {
   forwardRef,
+  isValidElement,
   type ButtonHTMLAttributes,
   type ReactNode,
 } from "react"
 import { Slot, type SlotType } from "../Slot/Slot"
+import { Text } from "../Text/Text"
 import "./Button.css"
 
 type ButtonVariant =
@@ -16,7 +18,10 @@ type ButtonVariant =
   | "destructive"
 
 type ButtonSize = "sm" | "md" | "lg"
-type ButtonSlotType = Exclude<SlotType, "checkbox" | "radio" | "switch">
+type ButtonSlotType = SlotType
+
+// Figma text style bindings: SM → xs/medium, MD → sm/medium, LG → base/medium.
+const labelSizes = { sm: "xs", md: "sm", lg: "base" } as const
 
 export interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -54,6 +59,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     const label = children ?? text
+    const startIcon = isValidElement(startSlot) ? startSlot : undefined
+    const endIcon = isValidElement(endSlot) ? endSlot : undefined
     const spinner = <span className="button__spinner" />
 
     return (
@@ -74,29 +81,29 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       >
         {iconOnly ? (
           <Slot
-            type={loading ? "icon" : startSlot != null ? startSlotType : endSlotType}
+            type={loading ? "icon" : startIcon != null ? startSlotType : endSlotType}
             size={size}
             aria-hidden="true"
           >
-            {loading ? spinner : startSlot ?? endSlot}
+            {loading ? spinner : startIcon ?? endIcon}
           </Slot>
         ) : (
           <>
-            {(startSlot != null || loading) && (
+            {(startIcon != null || loading) && (
               <Slot
                 type={loading ? "icon" : startSlotType}
                 size={size}
                 aria-hidden="true"
               >
-                {loading ? spinner : startSlot}
+                {loading ? spinner : startIcon}
               </Slot>
             )}
 
-            <span className="button__label">{label}</span>
+            <Text size={labelSizes[size]} weight="medium" className="button__label">{label}</Text>
 
-            {!loading && endSlot != null && (
+            {!loading && endIcon != null && (
               <Slot type={endSlotType} size={size} aria-hidden="true">
-                {endSlot}
+                {endIcon}
               </Slot>
             )}
           </>

@@ -14,6 +14,10 @@ const variants = [
   "destructive",
 ] as const
 
+function PlusIcon() {
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+}
+
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light")
 
@@ -71,7 +75,7 @@ function App() {
             <Button
               variant={variant}
               size="md"
-              startSlot={<span>+</span>}
+              startSlot={<PlusIcon />}
             >
               Add item
             </Button>
@@ -80,7 +84,7 @@ function App() {
               variant={variant}
               size="md"
               iconOnly
-              startSlot={<span>+</span>}
+              startSlot={<PlusIcon />}
               aria-label="新增项目"
             />
           </div>

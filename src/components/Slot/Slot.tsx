@@ -1,76 +1,25 @@
-
-import type { HTMLAttributes, ReactNode } from "react"
+import { isValidElement, type HTMLAttributes, type ReactElement } from "react"
 import "./Slot.css"
 
-export const slotTypes = [
-  "icon",
-  "avatar",
-  "flag",
-  "thumbnail",
-  "badge",
-  "checkbox",
-  "radio",
-  "switch",
-  "text",
-  "kbd",
-] as const
-
-export type SlotType = (typeof slotTypes)[number]
+// Extend this union only when the corresponding component is implemented.
+export type SlotType = "icon"
 export type SlotSize = "sm" | "md" | "lg"
 
-export interface SlotProps
-  extends Omit<HTMLAttributes<HTMLSpanElement>, "children"> {
+export interface SlotProps extends Omit<HTMLAttributes<HTMLSpanElement>, "children"> {
   type?: SlotType
   size?: SlotSize
-  text?: string
-  children?: ReactNode
+  /** An SVG/icon element. Plain text and boolean visibility flags are not slot content. */
+  children?: ReactElement
 }
 
-export function Slot({
-  type = "icon",
-  size = "sm",
-  text,
-  children,
-  className = "",
-  ...props
-}: SlotProps) {
-  const content =
-    children ??
-    (type === "text"
-      ? (text ?? "Text")
-      : type === "kbd"
-        ? (text ?? "⌘")
-        : null)
-
-  let inner: ReactNode
-
-  if (type === "kbd") {
-    inner = <kbd className="slot__kbd">{content}</kbd>
-  } else if (content != null) {
-    inner = <span className="slot__content">{content}</span>
-  } else if (type === "checkbox") {
-    inner = <span className="slot__checkbox" aria-hidden="true" />
-  } else if (type === "radio") {
-    inner = <span className="slot__radio" aria-hidden="true" />
-  } else if (type === "switch") {
-    inner = <span className="slot__switch" aria-hidden="true" />
-  } else {
-    inner = <span className="slot__content" />
-  }
+/** Icon-only content slot. Figma: SM 16/16, MD 20/18, LG 24/20. */
+export function Slot({ type = "icon", size = "sm", children, className = "", ...props }: SlotProps) {
+  // Also reject unsupported types/content from JavaScript and stale saved args.
+  if (type !== "icon" || (children != null && !isValidElement(children))) return null
 
   return (
-    <span
-      {...props}
-      className={[
-        "slot",
-        `slot--${type}`,
-        `slot--${size}`,
-        className,
-      ]
-        .filter(Boolean)
-        .join(" ")}
-    >
-      {inner}
+    <span {...props} className={["slot", "slot--icon", `slot--${size}`, className].filter(Boolean).join(" ")}>
+      <span className="slot__content">{children}</span>
     </span>
   )
 }

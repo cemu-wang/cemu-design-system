@@ -6,7 +6,8 @@
   align-items: center;
   justify-content: center;
   height: var(--button-height);
-  padding: 0 var(--button-padding);
+  /* Figma strokes are inside and do not increase the auto-layout width. */
+  padding: 0 calc(var(--button-padding) - 1px);
   border: 1px solid transparent;
   border-radius: var(--button-radius);
 
@@ -27,8 +28,6 @@
   --button-height: 32px;
   --button-padding: var(--spacing-12);
   --button-radius: var(--radius-sm);
-  --button-font-size: var(--font-size-xs);
-  --button-line-height: var(--line-height-xs);
   --button-text-style: var(--text-xs-font-medium);
   --button-letter-spacing: var(--text-xs-font-medium-letter-spacing);
   --label-padding: var(--spacing-4);
@@ -38,8 +37,6 @@
   --button-height: 40px;
   --button-padding: var(--spacing-14);
   --button-radius: var(--radius-md);
-  --button-font-size: var(--font-size-sm);
-  --button-line-height: var(--line-height-sm);
   --button-text-style: var(--text-sm-font-medium);
   --button-letter-spacing: var(--text-sm-font-medium-letter-spacing);
   --label-padding: var(--spacing-6);
@@ -49,8 +46,6 @@
   --button-height: 48px;
   --button-padding: calc(var(--spacing-16) + var(--spacing-2));
   --button-radius: var(--radius-lg);
-  --button-font-size: var(--font-size-base);
-  --button-line-height: var(--line-height-base);
   --button-text-style: var(--text-base-font-medium);
   --button-letter-spacing: var(--text-base-font-medium-letter-spacing);
   --label-padding: var(--spacing-6);
@@ -117,7 +112,8 @@
   background: var(--color-soft-hover);
   border-color: var(--color-border);
   color: var(--color-text-strong);
-  backdrop-filter: blur(var(--backdrop-blur-sm));
+  backdrop-filter: blur(var(--backdrop-blur-lg));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-lg));
 }
 
 /* Outline */
@@ -132,7 +128,8 @@
   background: var(--color-soft-hover);
   border-color: var(--color-border-strong);
   color: var(--color-text-strong);
-  backdrop-filter: blur(var(--backdrop-blur-sm));
+  backdrop-filter: blur(var(--backdrop-blur-lg));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-lg));
 }
 
 /* Ghost */
@@ -166,6 +163,12 @@
 
 .button--soft:focus-visible {
   border-color: var(--color-border);
+}
+
+.button--primaryOutline:focus-visible {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .button--ghost:focus-visible {

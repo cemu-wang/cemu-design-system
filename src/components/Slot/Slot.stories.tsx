@@ -1,177 +1,64 @@
-
-import type { ReactNode } from "react"
 import type { Meta, StoryObj } from "@storybook/react-vite"
-import { Slot, slotTypes } from "./Slot"
-import type { SlotSize, SlotType } from "./Slot"
+import { expect, within } from "storybook/test"
+import { Slot } from "./Slot"
+import type { SlotSize } from "./Slot"
+import { Text } from "../Text/Text"
 
 const sizes: SlotSize[] = ["sm", "md", "lg"]
+const dimensions = { sm: [16, 16], md: [20, 18], lg: [24, 20] } as const
 
 function DemoIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="11" cy="11" r="7" />
-      <path d="m16 16 5 5" />
-    </svg>
-  )
-}
-
-function demoContent(type: SlotType): ReactNode {
-  switch (type) {
-    case "icon":
-      return <DemoIcon />
-
-    case "avatar":
-      return (
-        <span
-          style={{
-            display: "grid",
-            placeItems: "center",
-            width: "100%",
-            height: "100%",
-            borderRadius: "50%",
-            background: "#dbeafe",
-            color: "#1d4ed8",
-            font: "var(--text-xs-font-semibold)",
-          }}
-        >
-          A
-        </span>
-      )
-
-    case "flag":
-      return "🇨🇳"
-
-    case "thumbnail":
-      return (
-        <span
-          style={{
-            display: "grid",
-            placeItems: "center",
-            width: "100%",
-            height: "100%",
-            background: "#ede9fe",
-            color: "#6d28d9",
-            font: "var(--text-xs-font-regular)",
-          }}
-        >
-          ▧
-        </span>
-      )
-
-    case "badge":
-      return (
-        <span
-          style={{
-            padding: "2px 8px",
-            border: "1px solid var(--color-border, #e5e7eb)",
-            borderRadius: 9999,
-            background: "var(--color-surface, #fff)",
-            color: "var(--color-text, #101828)",
-            font: "var(--text-xs-font-regular)",
-            whiteSpace: "nowrap",
-          }}
-        >
-          Badge ★
-        </span>
-      )
-
-    case "text":
-      return "Text"
-
-    case "kbd":
-      return "⌘"
-
-    default:
-      return null
-  }
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="11" cy="11" r="7" /><path d="m16 16 5 5" />
+  </svg>
 }
 
 const meta = {
   title: "Components/Slot",
   component: Slot,
   tags: ["autodocs"],
-  args: {
-    type: "icon",
-    size: "md",
+  parameters: {
+    layout: "centered",
+    docs: { description: { component: "当前仅实现 Icon。图标尺寸按 Figma 对齐，颜色和文本样式继承父组件；其他类型待对应组件完成后扩展。" } },
   },
+  args: { type: "icon", size: "md" },
   argTypes: {
-    type: {
-      control: "select",
-      options: [...slotTypes],
-    },
-    size: {
-      control: "select",
-      options: sizes,
-    },
-    text: {
-      control: "text",
-    },
-    children: {
-      control: false,
-    },
+    type: { control: false, table: { type: { summary: '"icon"' } } },
+    size: { control: "select", options: sizes },
+    children: { control: false },
   },
+  render: args => <Slot {...args} role="img" aria-label="搜索"><DemoIcon /></Slot>,
 } satisfies Meta<typeof Slot>
-
 export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Playground: Story = {
-  render: (args) => (
-    <Slot {...args}>
-      {args.type === "text" || args.type === "kbd"
-        ? undefined
-        : demoContent(args.type ?? "icon")}
-    </Slot>
-  ),
-}
+export const Playground: Story = {}
+export const Small: Story = { args: { size: "sm" } }
+export const Medium: Story = { args: { size: "md" } }
+export const Large: Story = { args: { size: "lg" } }
 
 export const AllVariants: Story = {
+  name: "Icon · 三种尺寸",
+  parameters: { controls: { disable: true } },
   render: () => (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "120px repeat(3, 120px)",
-        alignItems: "center",
-        gap: 16,
-        padding: 24,
-        width: "max-content",
-        color: "var(--color-text, #101828)",
-      }}
-    >
-      <strong>Type</strong>
-
-      {sizes.map((size) => (
-        <strong key={size}>{size.toUpperCase()}</strong>
-      ))}
-
-      {slotTypes.map((type) => (
-        <div key={type} style={{ display: "contents" }}>
-          <span>{type}</span>
-
-          {sizes.map((size) => (
-            <div
-              key={`${type}-${size}`}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                minHeight: 48,
-              }}
-            >
-              <Slot type={type} size={size}>
-                {demoContent(type)}
-              </Slot>
-            </div>
-          ))}
-        </div>
-      ))}
+    <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "var(--spacing-16)" }}>
+      {sizes.map(size => <div key={size} style={{ display: "grid", justifyItems: "center", gap: "var(--spacing-12)" }}>
+        <Text size="xs" weight="medium">{size.toUpperCase()}</Text>
+        <Slot size={size} role="img" aria-label={`搜索 ${size}`}><DemoIcon /></Slot>
+        <Text size="xs">{dimensions[size][0]} / {dimensions[size][1]} px</Text>
+      </div>)}
     </div>
   ),
+  play: async ({ canvasElement }) => {
+    for (const size of sizes) {
+      const slot = within(canvasElement).getByRole("img", { name: `搜索 ${size}` })
+      const icon = slot.querySelector("svg")!
+      await expect(slot).toHaveClass("slot--icon", `slot--${size}`)
+      await expect(getComputedStyle(slot).width).toBe(`${dimensions[size][0]}px`)
+      await expect(getComputedStyle(slot).height).toBe(`${dimensions[size][0]}px`)
+      await expect(getComputedStyle(icon).width).toBe(`${dimensions[size][1]}px`)
+      await expect(getComputedStyle(icon).height).toBe(`${dimensions[size][1]}px`)
+    }
+  },
 }

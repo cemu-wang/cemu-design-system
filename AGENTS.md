@@ -8,3 +8,4 @@
 - Keep raw Figma definitions and binding IDs in the snapshot. Generated CSS is checked in for direct use, but must be regenerated with `npm run tokens:build`, never manually edited.
 - Follow `docs/styles.md` for usage and CSS translation limits. Check `Foundations/Styles` in Storybook to inspect all imported styles.
 - Preserve existing user work. Work on the feature branch. Do not merge into `main` without explicit user approval after validation.
+- Slot currently supports **Icon only**, including when used inside Button. Do not reintroduce Avatar, Flag, Thumbnail, Badge, Checkbox, Radio, Switch, Text or KBD Slot variants until their corresponding components are implemented and the user asks to expand support. Slot receives icon elements; Button startSlot/endSlot remain ReactNode props and visibility booleans must be converted to actual icon elements by the caller.

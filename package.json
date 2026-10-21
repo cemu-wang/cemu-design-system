@@ -4,6 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "tokens:build": "node scripts/build-tokens.mjs && node scripts/build-styles.mjs",
+    "prebuild": "npm run tokens:build",
+    "predev": "npm run tokens:build",
+    "prestorybook": "npm run tokens:build",
+    "prebuild-storybook": "npm run tokens:build",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",

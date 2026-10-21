@@ -10,10 +10,8 @@
   border: 1px solid transparent;
   border-radius: var(--button-radius);
 
-  font-family: var(--font-family), monospace;
-  font-size: var(--button-font-size);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--button-line-height);
+  font: var(--button-text-style);
+  letter-spacing: var(--button-letter-spacing);
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
@@ -31,6 +29,8 @@
   --button-radius: var(--radius-sm);
   --button-font-size: var(--font-size-xs);
   --button-line-height: var(--line-height-xs);
+  --button-text-style: var(--text-xs-font-medium);
+  --button-letter-spacing: var(--text-xs-font-medium-letter-spacing);
   --label-padding: var(--spacing-4);
 }
 
@@ -40,6 +40,8 @@
   --button-radius: var(--radius-md);
   --button-font-size: var(--font-size-sm);
   --button-line-height: var(--line-height-sm);
+  --button-text-style: var(--text-sm-font-medium);
+  --button-letter-spacing: var(--text-sm-font-medium-letter-spacing);
   --label-padding: var(--spacing-6);
 }
 
@@ -49,6 +51,8 @@
   --button-radius: var(--radius-lg);
   --button-font-size: var(--font-size-base);
   --button-line-height: var(--line-height-base);
+  --button-text-style: var(--text-base-font-medium);
+  --button-letter-spacing: var(--text-base-font-medium-letter-spacing);
   --label-padding: var(--spacing-6);
 }
 
@@ -70,16 +74,11 @@
 .button--primary {
   background: var(--color-primary);
   color: var(--color-primary-foreground);
-  --focus-ring: var(--focus-primary);
+  --button-focus-ring: var(--focus-ring-primary);
 }
 
 .button--primary:is(:hover, :active):not(:disabled) {
-  background: radial-gradient(
-    ellipse at center,
-    var(--color-primary) 0%,
-    color-mix(in srgb, var(--color-primary) 50%, var(--color-primary-hover)) 42.5%,
-    var(--color-primary-hover) 85%
-  );
+  background: var(--gradient-primary);
 }
 
 /* Primary Outline */
@@ -87,7 +86,7 @@
   background: transparent;
   border-color: var(--color-primary);
   color: var(--color-primary);
-  --focus-ring: var(--focus-primary);
+  --button-focus-ring: var(--focus-ring-primary);
 }
 
 .button--primaryOutline:is(:hover, :active):not(:disabled) {
@@ -100,29 +99,25 @@
 .button--secondary {
   background: var(--color-secondary);
   color: var(--color-secondary-foreground);
-  --focus-ring: var(--focus-secondary);
+  --button-focus-ring: var(--focus-ring-secondary);
 }
 
 .button--secondary:is(:hover, :active):not(:disabled) {
-  background: radial-gradient(
-    ellipse at center,
-    var(--color-secondary) 0%,
-    var(--color-secondary-hover) 95%
-  );
+  background: var(--gradient-secondary);
 }
 
 /* Soft */
 .button--soft {
   background: var(--color-soft);
   color: var(--color-text);
-  --focus-ring: var(--focus-default);
+  --button-focus-ring: var(--focus-ring);
 }
 
 .button--soft:is(:hover, :active):not(:disabled) {
   background: var(--color-soft-hover);
   border-color: var(--color-border);
   color: var(--color-text-strong);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(var(--backdrop-blur-sm));
 }
 
 /* Outline */
@@ -130,21 +125,21 @@
   background: var(--color-surface);
   color: var(--color-text);
   border-color: var(--color-border);
-  --focus-ring: var(--focus-default);
+  --button-focus-ring: var(--focus-ring);
 }
 
 .button--outline:is(:hover, :active):not(:disabled) {
   background: var(--color-soft-hover);
   border-color: var(--color-border-strong);
   color: var(--color-text-strong);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(var(--backdrop-blur-sm));
 }
 
 /* Ghost */
 .button--ghost {
   background: transparent;
   color: var(--color-text);
-  --focus-ring: var(--focus-default);
+  --button-focus-ring: var(--focus-ring);
 }
 
 .button--ghost:is(:hover, :active):not(:disabled) {
@@ -156,21 +151,17 @@
 .button--destructive {
   background: var(--color-destructive);
   color: var(--color-destructive-foreground);
-  --focus-ring: var(--focus-destructive);
+  --button-focus-ring: var(--focus-ring-error);
 }
 
 .button--destructive:is(:hover, :active):not(:disabled) {
-  background: radial-gradient(
-    ellipse at center,
-    var(--color-destructive) 0%,
-    var(--color-destructive-hover) 95%
-  );
+  background: var(--gradient-error);
 }
 
 /* Focus */
 .button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px var(--focus-ring);
+  box-shadow: var(--button-focus-ring);
 }
 
 .button--soft:focus-visible {

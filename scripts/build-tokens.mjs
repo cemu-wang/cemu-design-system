@@ -57,7 +57,6 @@ function resolve(node) {
 const light = tokens["ThemeColor/Light"]
 const primary = tokens["PrimaryColor/Base"]
 const dims = tokens["Dimensions/Default"]
-const typography = tokens["Typography/English"]
 
 const px = (node) => `${resolve(node)}px`
 
@@ -88,15 +87,6 @@ const variables = {
   "--focus-secondary": resolve(light.Effects["secondary-focus-ring"]),
   "--focus-default": resolve(light.Effects["focus-ring"]),
   "--focus-destructive": resolve(light.Effects["error-focus-ring"]),
-
-  "--font-family": JSON.stringify(resolve(typography["font-family"])),
-  "--font-weight-medium": resolve(typography["font-weight"].medium),
-  "--font-size-xs": px(typography["font-size"].xs),
-  "--font-size-sm": px(typography["font-size"].sm),
-  "--font-size-base": px(typography["font-size"].base),
-  "--line-height-xs": px(typography["line-height"].xs),
-  "--line-height-sm": px(typography["line-height"].sm),
-  "--line-height-base": px(typography["line-height"].base),
 
   "--radius-sm": px(dims["border-radius"].sm),
   "--radius-md": px(dims["border-radius"].md),
@@ -156,8 +146,8 @@ function toCSS(selector, values) {
 
 // 同时生成 Light 和 Dark
 const css = [
-  toCSS(":root", variables),
-  toCSS(':root[data-theme="dark"]', darkVariables),
+  toCSS(':root, [data-theme="light"]', variables),
+  toCSS('[data-theme="dark"]', darkVariables),
 ].join("\n\n")
 
 

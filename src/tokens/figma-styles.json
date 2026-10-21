@@ -1,0 +1,3068 @@
+{
+  "source": {
+    "fileKey": "eygiBSiA9xJvYwxZWLeno7",
+    "url": "https://www.figma.com/design/eygiBSiA9xJvYwxZWLeno7/Cemu-s-Design-System",
+    "capturedAt": "2026-10-21",
+    "scope": "Local text, effect, paint and grid styles; referenced Typography modes and resolved Light/Dark style colors."
+  },
+  "textStyles": [
+    {
+      "id": "S:815852686f0e98b326129e1fd3b4aff500b1407d,",
+      "key": "815852686f0e98b326129e1fd3b4aff500b1407d",
+      "name": "text-xs/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 16
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:4"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:40"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:3b05f73b1b1388b541cdc6bb09e3eef39161177a,",
+      "key": "3b05f73b1b1388b541cdc6bb09e3eef39161177a",
+      "name": "text-xs/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 16
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:4"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:40"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:81b0a800aa8c11f7afe9fc883eb7e9fcfd375d68,",
+      "key": "81b0a800aa8c11f7afe9fc883eb7e9fcfd375d68",
+      "name": "text-xs/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 16
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:4"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:40"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:7485365dd14871453826fee23d27269b5ed09f15,",
+      "key": "7485365dd14871453826fee23d27269b5ed09f15",
+      "name": "text-sm/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 20
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:5"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:49"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:796d817939815064e879085112946ebae980952a,",
+      "key": "796d817939815064e879085112946ebae980952a",
+      "name": "text-sm/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 20
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:5"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:49"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:dba2b796b6f141f5ea84e8fcac6c3e2ad8ae0f21,",
+      "key": "dba2b796b6f141f5ea84e8fcac6c3e2ad8ae0f21",
+      "name": "text-sm/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 20
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:5"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:49"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:f0adebf4fc7ae79c7b7251c9d979ae7adbaf61a4,",
+      "key": "f0adebf4fc7ae79c7b7251c9d979ae7adbaf61a4",
+      "name": "text-base/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:6"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:47"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:1f997d1940616a175a0a8ab818381490b48cc390,",
+      "key": "1f997d1940616a175a0a8ab818381490b48cc390",
+      "name": "text-base/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:6"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:47"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:5039ffdd06d1dd9ac193083b5001a55bca8b24c6,",
+      "key": "5039ffdd06d1dd9ac193083b5001a55bca8b24c6",
+      "name": "text-base/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:6"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:47"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:acf1707533cad56b7fa34e04cbadef4e6e6b905e,",
+      "key": "acf1707533cad56b7fa34e04cbadef4e6e6b905e",
+      "name": "text-lg/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:7"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:46"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:36d7a8e503f2d5e69c134087556fb4090c3dd4f5,",
+      "key": "36d7a8e503f2d5e69c134087556fb4090c3dd4f5",
+      "name": "text-lg/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:7"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:46"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:d58cc5b66f148f682fa5d4d95e4d735d6d8d919c,",
+      "key": "d58cc5b66f148f682fa5d4d95e4d735d6d8d919c",
+      "name": "text-lg/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 26
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:7"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:46"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:dee2b4f0f9ed1dc5cbc55b3fbd5423daabf38677,",
+      "key": "dee2b4f0f9ed1dc5cbc55b3fbd5423daabf38677",
+      "name": "text-xl/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:8"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:44"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:16a1810566c7228b564046d2ed138ca0ddef46ee,",
+      "key": "16a1810566c7228b564046d2ed138ca0ddef46ee",
+      "name": "text-xl/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:8"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:44"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:e11f0c6efce8dbb82c97ebedf2f14164069326df,",
+      "key": "e11f0c6efce8dbb82c97ebedf2f14164069326df",
+      "name": "text-xl/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:8"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:44"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:f2ab0c0a75a2af1cbac8bec39920320215249544,",
+      "key": "f2ab0c0a75a2af1cbac8bec39920320215249544",
+      "name": "text-2xl/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 30
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:81"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:45"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:fc318066b31438ed2cd6753dbc393ff33abe535a,",
+      "key": "fc318066b31438ed2cd6753dbc393ff33abe535a",
+      "name": "text-2xl/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 30
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:81"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:45"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:4cdfc9dc7c1728b0bea567bc9a90602adef82ce0,",
+      "key": "4cdfc9dc7c1728b0bea567bc9a90602adef82ce0",
+      "name": "text-2xl/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 30
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:81"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:45"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:a164d157d6294e7789f00c47caddd481be266d3a,",
+      "key": "a164d157d6294e7789f00c47caddd481be266d3a",
+      "name": "text-3xl/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 28,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 34
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:80"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:43"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:1ccdbb6d0e8eb3bd4d7a39f60b1fa2e9d6b8eeb0,",
+      "key": "1ccdbb6d0e8eb3bd4d7a39f60b1fa2e9d6b8eeb0",
+      "name": "text-3xl/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 28,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 34
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:80"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:43"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:61660aa4490a35ea1b47e97326c8f0533ff7352f,",
+      "key": "61660aa4490a35ea1b47e97326c8f0533ff7352f",
+      "name": "text-3xl/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 28,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 34
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:80"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:43"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:880e1b1cf4eb6c751bfec60fdf71e890159cd67c,",
+      "key": "880e1b1cf4eb6c751bfec60fdf71e890159cd67c",
+      "name": "text-4xl/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 38
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:92"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:51"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:b787c36970e7e3db73d9956b4e95b4b483b3eceb,",
+      "key": "b787c36970e7e3db73d9956b4e95b4b483b3eceb",
+      "name": "text-4xl/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 38
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:92"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:51"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:a941ec2eb69057204079a576e80910c7f016c293,",
+      "key": "a941ec2eb69057204079a576e80910c7f016c293",
+      "name": "text-4xl/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 38
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:92"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:51"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:e96448b880b1ac2cb3e61c247a83f388dd917e1a,",
+      "key": "e96448b880b1ac2cb3e61c247a83f388dd917e1a",
+      "name": "text-5xl/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 46
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:89"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:48"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:076818398a2b6e71e6e7302710d32112655cf7c1,",
+      "key": "076818398a2b6e71e6e7302710d32112655cf7c1",
+      "name": "text-5xl/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 46
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:89"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:48"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:4868d69be12256c19a0af062c6a232e58ad3628e,",
+      "key": "4868d69be12256c19a0af062c6a232e58ad3628e",
+      "name": "text-5xl/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 46
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:89"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:48"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:ad348c2c81286358563479f3d18e881f19e7c47a,",
+      "key": "ad348c2c81286358563479f3d18e881f19e7c47a",
+      "name": "text-6xl/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 54
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:85"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:42"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:4e326030c4a844f23b3873f483c86c619cb2b608,",
+      "key": "4e326030c4a844f23b3873f483c86c619cb2b608",
+      "name": "text-6xl/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 54
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:85"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:42"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:521cf9c28132750f07c8d8128363bd9ef7bef190,",
+      "key": "521cf9c28132750f07c8d8128363bd9ef7bef190",
+      "name": "text-6xl/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 54
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:85"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:42"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:3242dbe957ebdf0884c4ab5f03e4d01019fbc1bd,",
+      "key": "3242dbe957ebdf0884c4ab5f03e4d01019fbc1bd",
+      "name": "text-7xl/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 60,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 66
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:90"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:41"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:15ebe01a4dcbb03e0aaaf72cacbe4c83dafcaf4a,",
+      "key": "15ebe01a4dcbb03e0aaaf72cacbe4c83dafcaf4a",
+      "name": "text-7xl/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 60,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 66
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:90"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:41"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:f343e0cdd981c3c6392d2782229769e8bd68d82a,",
+      "key": "f343e0cdd981c3c6392d2782229769e8bd68d82a",
+      "name": "text-7xl/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 60,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 66
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:90"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:41"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    },
+    {
+      "id": "S:e1ae1d2ceb83cf097f3533937626018731742f15,",
+      "key": "e1ae1d2ceb83cf097f3533937626018731742f15",
+      "name": "text-8xl/font-regular",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 72,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 78
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:87"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:39"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:143"
+        }
+      }
+    },
+    {
+      "id": "S:3b9b2e1135eda33bff76cb1ba6ea954eacf54621,",
+      "key": "3b9b2e1135eda33bff76cb1ba6ea954eacf54621",
+      "name": "text-8xl/font-medium",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 72,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 78
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:87"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:39"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:142"
+        }
+      }
+    },
+    {
+      "id": "S:1bcdf7a45a46a5640bd7fa4c77324b8034d51be1,",
+      "key": "1bcdf7a45a46a5640bd7fa4c77324b8034d51be1",
+      "name": "text-8xl/font-semibold",
+      "fontName": {
+        "family": "Geist Mono",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 72,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 78
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:87"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:3"
+        },
+        "lineHeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:39"
+        },
+        "fontWeight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:7255:140"
+        }
+      }
+    }
+  ],
+  "variables": [
+    {
+      "id": "VariableID:7255:4",
+      "name": "font-size/xs",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 12,
+        "22115:1": 12
+      }
+    },
+    {
+      "id": "VariableID:7255:3",
+      "name": "font-family",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "STRING",
+      "valuesByMode": {
+        "7331:0": "Geist Mono",
+        "22115:1": "PingFang UI SC"
+      }
+    },
+    {
+      "id": "VariableID:7255:40",
+      "name": "line-height/xs",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 16,
+        "22115:1": 16
+      }
+    },
+    {
+      "id": "VariableID:7255:143",
+      "name": "font-weight/regular",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 400,
+        "22115:1": 400
+      }
+    },
+    {
+      "id": "VariableID:7255:142",
+      "name": "font-weight/medium",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 500,
+        "22115:1": 500
+      }
+    },
+    {
+      "id": "VariableID:7255:140",
+      "name": "font-weight/semibold",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 600,
+        "22115:1": 600
+      }
+    },
+    {
+      "id": "VariableID:7255:5",
+      "name": "font-size/sm",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 14,
+        "22115:1": 14
+      }
+    },
+    {
+      "id": "VariableID:7255:49",
+      "name": "line-height/sm",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 20,
+        "22115:1": 20
+      }
+    },
+    {
+      "id": "VariableID:7255:6",
+      "name": "font-size/base",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 16,
+        "22115:1": 16
+      }
+    },
+    {
+      "id": "VariableID:7255:47",
+      "name": "line-height/base",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 24,
+        "22115:1": 24
+      }
+    },
+    {
+      "id": "VariableID:7255:7",
+      "name": "font-size/lg",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 18,
+        "22115:1": 18
+      }
+    },
+    {
+      "id": "VariableID:7255:46",
+      "name": "line-height/lg",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 26,
+        "22115:1": 26
+      }
+    },
+    {
+      "id": "VariableID:7255:8",
+      "name": "font-size/xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 20,
+        "22115:1": 20
+      }
+    },
+    {
+      "id": "VariableID:7255:44",
+      "name": "line-height/xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 28,
+        "22115:1": 28
+      }
+    },
+    {
+      "id": "VariableID:7255:81",
+      "name": "font-size/2xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 24,
+        "22115:1": 24
+      }
+    },
+    {
+      "id": "VariableID:7255:45",
+      "name": "line-height/2xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 30,
+        "22115:1": 30
+      }
+    },
+    {
+      "id": "VariableID:7255:80",
+      "name": "font-size/3xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 28,
+        "22115:1": 28
+      }
+    },
+    {
+      "id": "VariableID:7255:43",
+      "name": "line-height/3xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 34,
+        "22115:1": 34
+      }
+    },
+    {
+      "id": "VariableID:7255:92",
+      "name": "font-size/4xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 32,
+        "22115:1": 32
+      }
+    },
+    {
+      "id": "VariableID:7255:51",
+      "name": "line-height/4xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 38,
+        "22115:1": 38
+      }
+    },
+    {
+      "id": "VariableID:7255:89",
+      "name": "font-size/5xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 40,
+        "22115:1": 40
+      }
+    },
+    {
+      "id": "VariableID:7255:48",
+      "name": "line-height/5xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 46,
+        "22115:1": 46
+      }
+    },
+    {
+      "id": "VariableID:7255:85",
+      "name": "font-size/6xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 48,
+        "22115:1": 48
+      }
+    },
+    {
+      "id": "VariableID:7255:42",
+      "name": "line-height/6xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 54,
+        "22115:1": 54
+      }
+    },
+    {
+      "id": "VariableID:7255:90",
+      "name": "font-size/7xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 60,
+        "22115:1": 60
+      }
+    },
+    {
+      "id": "VariableID:7255:41",
+      "name": "line-height/7xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 66,
+        "22115:1": 66
+      }
+    },
+    {
+      "id": "VariableID:7255:87",
+      "name": "font-size/8xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 72,
+        "22115:1": 72
+      }
+    },
+    {
+      "id": "VariableID:7255:39",
+      "name": "line-height/8xl",
+      "collectionId": "VariableCollectionId:7255:2",
+      "type": "FLOAT",
+      "valuesByMode": {
+        "7331:0": 78,
+        "22115:1": 78
+      }
+    }
+  ],
+  "collections": [
+    {
+      "id": "VariableCollectionId:7255:2",
+      "name": "Typography",
+      "modes": [
+        {
+          "name": "English",
+          "modeId": "7331:0"
+        },
+        {
+          "name": "Chinese",
+          "modeId": "22115:1"
+        }
+      ],
+      "defaultModeId": "7331:0"
+    }
+  ],
+  "effectStyles": [
+    {
+      "id": "S:58cdb2c927e03783cea466b89b1b8b375c427421,",
+      "key": "58cdb2c927e03783cea466b89b1b8b375c427421",
+      "name": "Shadow/shadow-2xs",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9049:3125"
+            }
+          },
+          "color": {
+            "r": 0.4156862795352936,
+            "g": 0.4470588266849518,
+            "b": 0.5098039507865906,
+            "a": 0.18000000715255737
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:f4af503ea294b0849f2911622405faacb0ae8d49,",
+      "key": "f4af503ea294b0849f2911622405faacb0ae8d49",
+      "name": "Shadow/shadow-xs",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 4,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9049:3125"
+            }
+          },
+          "color": {
+            "r": 0.4156862795352936,
+            "g": 0.4470588266849518,
+            "b": 0.5098039507865906,
+            "a": 0.18000000715255737
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:e36d323860e3d06b2fe31544b0ab162ffc6115d9,",
+      "key": "e36d323860e3d06b2fe31544b0ab162ffc6115d9",
+      "name": "Shadow/shadow-sm",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9049:3125"
+            }
+          },
+          "color": {
+            "r": 0.4156862795352936,
+            "g": 0.4470588266849518,
+            "b": 0.5098039507865906,
+            "a": 0.18000000715255737
+          },
+          "offset": {
+            "x": 0,
+            "y": 2
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:5ff049415c177b0006827f050e18a4de4add48cb,",
+      "key": "5ff049415c177b0006827f050e18a4de4add48cb",
+      "name": "Shadow/shadow-md",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9049:3125"
+            }
+          },
+          "color": {
+            "r": 0.4156862795352936,
+            "g": 0.4470588266849518,
+            "b": 0.5098039507865906,
+            "a": 0.18000000715255737
+          },
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:d707616548585053b8602bd5f35120dec4d45b4d,",
+      "key": "d707616548585053b8602bd5f35120dec4d45b4d",
+      "name": "Shadow/shadow-lg",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9049:3125"
+            }
+          },
+          "color": {
+            "r": 0.4156862795352936,
+            "g": 0.4470588266849518,
+            "b": 0.5098039507865906,
+            "a": 0.18000000715255737
+          },
+          "offset": {
+            "x": 0,
+            "y": 8
+          },
+          "spread": -4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:07839843b22d2961d0333f058749cfffddbcc77f,",
+      "key": "07839843b22d2961d0333f058749cfffddbcc77f",
+      "name": "Shadow/shadow-xl",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 28,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9049:3125"
+            }
+          },
+          "color": {
+            "r": 0.4156862795352936,
+            "g": 0.4470588266849518,
+            "b": 0.5098039507865906,
+            "a": 0.18000000715255737
+          },
+          "offset": {
+            "x": 0,
+            "y": 12
+          },
+          "spread": -6,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:62a1856b254e0c3f8a2aa07ecdb0fc2b2bf9823c,",
+      "key": "62a1856b254e0c3f8a2aa07ecdb0fc2b2bf9823c",
+      "name": "Shadow/shadow-2xl",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 32,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9049:3125"
+            }
+          },
+          "color": {
+            "r": 0.4156862795352936,
+            "g": 0.4470588266849518,
+            "b": 0.5098039507865906,
+            "a": 0.18000000715255737
+          },
+          "offset": {
+            "x": 0,
+            "y": 24
+          },
+          "spread": -12,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:9726e64c105c93390f0d561b6bc2b186cfd29376,",
+      "key": "9726e64c105c93390f0d561b6bc2b186cfd29376",
+      "name": "Shadow/shadow-inner",
+      "effects": [
+        {
+          "type": "INNER_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9049:3125"
+            }
+          },
+          "color": {
+            "r": 0.4156862795352936,
+            "g": 0.4470588266849518,
+            "b": 0.5098039507865906,
+            "a": 0.18000000715255737
+          },
+          "offset": {
+            "x": 0,
+            "y": 2
+          },
+          "spread": 0,
+          "blendMode": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:271ad5241c21b7fa98417a950023a50ef5e2c4e4,",
+      "key": "271ad5241c21b7fa98417a950023a50ef5e2c4e4",
+      "name": "Blur/blur-xs",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 4,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:33aec56fbd16a4e375cddcb29b968e8373a089a6,",
+      "key": "33aec56fbd16a4e375cddcb29b968e8373a089a6",
+      "name": "Blur/blur-sm",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:4ab468c6140f5b33edbbe43574820bcc738af401,",
+      "key": "4ab468c6140f5b33edbbe43574820bcc738af401",
+      "name": "Blur/blur-md",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 12,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:5250834b2f472bd737e1cb0247382fc620070c45,",
+      "key": "5250834b2f472bd737e1cb0247382fc620070c45",
+      "name": "Blur/blur-lg",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:fc45b17eb222186d83290cdb02237864256db70d,",
+      "key": "fc45b17eb222186d83290cdb02237864256db70d",
+      "name": "Blur/blur-xl",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:0580ebe327e18da335a34597b55c8a24a358aad8,",
+      "key": "0580ebe327e18da335a34597b55c8a24a358aad8",
+      "name": "Blur/blur-2xl",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 40,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:e944e517c3747130619da9d3236470bc174f02ef,",
+      "key": "e944e517c3747130619da9d3236470bc174f02ef",
+      "name": "Blur/blur-3xl",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 64,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:e277a05df5b1c814405bb782fcf153d06be5f49e,",
+      "key": "e277a05df5b1c814405bb782fcf153d06be5f49e",
+      "name": "Backdrop Blur/backdrop-blur-xs",
+      "effects": [
+        {
+          "type": "BACKGROUND_BLUR",
+          "visible": true,
+          "radius": 4,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:08bf366d5fd1bafb42fa2a5adeab925bd66c1c06,",
+      "key": "08bf366d5fd1bafb42fa2a5adeab925bd66c1c06",
+      "name": "Backdrop Blur/backdrop-blur-sm",
+      "effects": [
+        {
+          "type": "BACKGROUND_BLUR",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:6da51ae53d9e4c6ab327a19d9ca3ef599120c908,",
+      "key": "6da51ae53d9e4c6ab327a19d9ca3ef599120c908",
+      "name": "Backdrop Blur/backdrop-blur-md",
+      "effects": [
+        {
+          "type": "BACKGROUND_BLUR",
+          "visible": true,
+          "radius": 12,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:a86939310a352548454c8a5d5becb8bf372a370a,",
+      "key": "a86939310a352548454c8a5d5becb8bf372a370a",
+      "name": "Backdrop Blur/backdrop-blur-lg",
+      "effects": [
+        {
+          "type": "BACKGROUND_BLUR",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:cdcf3d098ff3ae56d2468023e8bfcd36546bbdaf,",
+      "key": "cdcf3d098ff3ae56d2468023e8bfcd36546bbdaf",
+      "name": "Backdrop Blur/backdrop-blur-xl",
+      "effects": [
+        {
+          "type": "BACKGROUND_BLUR",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:6fe13c0365d9eb1d6fa6f4e4f615a421deb68fcc,",
+      "key": "6fe13c0365d9eb1d6fa6f4e4f615a421deb68fcc",
+      "name": "Backdrop Blur/backdrop-blur-2xl",
+      "effects": [
+        {
+          "type": "BACKGROUND_BLUR",
+          "visible": true,
+          "radius": 40,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:f5262374ec5a2225ac35700698fb8f1b9ece1cb9,",
+      "key": "f5262374ec5a2225ac35700698fb8f1b9ece1cb9",
+      "name": "Backdrop Blur/backdrop-blur-3xl",
+      "effects": [
+        {
+          "type": "BACKGROUND_BLUR",
+          "visible": true,
+          "radius": 64,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "S:acd7d94108fa0c0ba2e9a9013865982db5dc1fe6,",
+      "key": "acd7d94108fa0c0ba2e9a9013865982db5dc1fe6",
+      "name": "Focus Ring/focus-ring",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:11028:7132"
+            }
+          },
+          "color": {
+            "r": 0.8196078538894653,
+            "g": 0.8352941274642944,
+            "b": 0.8588235378265381,
+            "a": 1
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 3,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:509e584553114b045d19b2fb70c8557dc067a1a3,",
+      "key": "509e584553114b045d19b2fb70c8557dc067a1a3",
+      "name": "Focus Ring/focus-ring-input",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:11028:7359"
+            }
+          },
+          "color": {
+            "r": 0.8980392217636108,
+            "g": 0.9058823585510254,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 3,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:d8e0241b600d35ecb7c18c49845aea79157e8709,",
+      "key": "d8e0241b600d35ecb7c18c49845aea79157e8709",
+      "name": "Focus Ring/focus-ring-primary",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9723:5028"
+            }
+          },
+          "color": {
+            "r": 0.8196078538894653,
+            "g": 0.8352941274642944,
+            "b": 0.8588235378265381,
+            "a": 1
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 3,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:15feda633e65201dde0aa0b45113e3b6a3cba65b,",
+      "key": "15feda633e65201dde0aa0b45113e3b6a3cba65b",
+      "name": "Focus Ring/focus-ring-secondary",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9723:5017"
+            }
+          },
+          "color": {
+            "r": 0.16862745583057404,
+            "g": 0.49803921580314636,
+            "b": 1,
+            "a": 0.30000001192092896
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 3,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:e4006683db97e455887b77245249197dda39db80,",
+      "key": "e4006683db97e455887b77245249197dda39db80",
+      "name": "Focus Ring/focus-ring-error",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9723:5019"
+            }
+          },
+          "color": {
+            "r": 0.9843137264251709,
+            "g": 0.1725490242242813,
+            "b": 0.21176470816135406,
+            "a": 0.30000001192092896
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 3,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:df275950dfeb106fcca28e0a62fe321f0702a0e1,",
+      "key": "df275950dfeb106fcca28e0a62fe321f0702a0e1",
+      "name": "Focus Ring/focus-ring-success",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9723:5020"
+            }
+          },
+          "color": {
+            "r": 0,
+            "g": 0.7372549176216125,
+            "b": 0.4901960790157318,
+            "a": 0.30000001192092896
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 3,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:9e109b0921d6577cdb768ba79d29378cab82ec26,",
+      "key": "9e109b0921d6577cdb768ba79d29378cab82ec26",
+      "name": "Focus Ring/focus-ring-warning",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9723:5021"
+            }
+          },
+          "color": {
+            "r": 1,
+            "g": 0.4117647111415863,
+            "b": 0,
+            "a": 0.30000001192092896
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 3,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:c558b6f4f512101e53c6994df64f095211899aa7,",
+      "key": "c558b6f4f512101e53c6994df64f095211899aa7",
+      "name": "Focus Ring/focus-ring-info",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9723:5023"
+            }
+          },
+          "color": {
+            "r": 0,
+            "g": 0.6509804129600525,
+            "b": 0.95686274766922,
+            "a": 0.30000001192092896
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 3,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:884d43498731d363da220d67d566edde1e856f4f,",
+      "key": "884d43498731d363da220d67d566edde1e856f4f",
+      "name": "Focus Ring/focus-ring-light",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:10125:517"
+            }
+          },
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.25
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 3,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    }
+  ],
+  "paintStyles": [
+    {
+      "id": "S:43a8467bc4e515f13e45aa87dc17d5158d5b303d,",
+      "key": "43a8467bc4e515f13e45aa87dc17d5158d5b303d",
+      "name": "Gradient/gradient-primary",
+      "paints": [
+        {
+          "type": "GRADIENT_RADIAL",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.062745101749897,
+                "g": 0.0941176488995552,
+                "b": 0.1568627506494522,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:22879:11471"
+                }
+              }
+            },
+            {
+              "color": {
+                "r": 0.21176470816135406,
+                "g": 0.2549019753932953,
+                "b": 0.32549020648002625,
+                "a": 1
+              },
+              "position": 0.8500000238418579,
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:9696:4521"
+                }
+              }
+            }
+          ],
+          "gradientTransform": [
+            [
+              -8.830524304132264e-15,
+              -0.6399999856948853,
+              0.8199999928474426
+            ],
+            [
+              0.36192184686660767,
+              -5.761935270950274e-16,
+              0.31162264943122864
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S:fcac70547d46cc0823c697644f184c4486a06a90,",
+      "key": "fcac70547d46cc0823c697644f184c4486a06a90",
+      "name": "Gradient/gradient-secondary",
+      "paints": [
+        {
+          "type": "GRADIENT_RADIAL",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.5568627715110779,
+                "g": 0.772549033164978,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:7111:13"
+                }
+              }
+            },
+            {
+              "color": {
+                "r": 0.7450980544090271,
+                "g": 0.8588235378265381,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0.949999988079071,
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:8860:1351"
+                }
+              }
+            }
+          ],
+          "gradientTransform": [
+            [
+              -8.830524304132264e-15,
+              -0.6399999856948853,
+              0.8199999928474426
+            ],
+            [
+              0.36192184686660767,
+              -5.761935270950274e-16,
+              0.31162264943122864
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S:9dd548bfa74aa27c964fe71f417374db48614332,",
+      "key": "9dd548bfa74aa27c964fe71f417374db48614332",
+      "name": "Gradient/gradient-error",
+      "paints": [
+        {
+          "type": "GRADIENT_RADIAL",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 1,
+                "g": 0.6352941393852234,
+                "b": 0.6352941393852234,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:7120:40"
+                }
+              }
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 0.7882353067398071,
+                "b": 0.7882353067398071,
+                "a": 1
+              },
+              "position": 0.949999988079071,
+              "boundVariables": {
+                "color": {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:9271:2790"
+                }
+              }
+            }
+          ],
+          "gradientTransform": [
+            [
+              -8.830524304132264e-15,
+              -0.6399999856948853,
+              0.8199999928474426
+            ],
+            [
+              0.36192184686660767,
+              -5.761935270950274e-16,
+              0.31162264943122864
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "gridStyles": [
+    {
+      "id": "S:3cdba0b6dfc206dd77b262f62d389d2850ff25bf,",
+      "key": "3cdba0b6dfc206dd77b262f62d389d2850ff25bf",
+      "name": "Grid [Desktop] [Container]",
+      "layoutGrids": [
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.8823529481887817,
+            "g": 0.11372549086809158,
+            "b": 0.2823529541492462,
+            "a": 0.07999999821186066
+          },
+          "gutterSize": 24,
+          "alignment": "CENTER",
+          "count": 12,
+          "sectionSize": 88,
+          "boundVariables": {
+            "gutterSize": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2:281"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "S:efa539d7a39602ea81dbab6ee5d0b1876fe586fb,",
+      "key": "efa539d7a39602ea81dbab6ee5d0b1876fe586fb",
+      "name": "Grid [Mobile]",
+      "layoutGrids": [
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.8823529481887817,
+            "g": 0.11372549086809158,
+            "b": 0.2823529541492462,
+            "a": 0.07999999821186066
+          },
+          "gutterSize": 16,
+          "alignment": "CENTER",
+          "count": 2,
+          "sectionSize": 164,
+          "boundVariables": {
+            "gutterSize": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2:279"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "styleColors": [
+    {
+      "id": "VariableID:9049:3125",
+      "name": "Effects/shadow",
+      "light": {
+        "r": 0.4156862795352936,
+        "g": 0.4470588266849518,
+        "b": 0.5098039507865906,
+        "a": 0.18
+      },
+      "dark": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0.3
+      }
+    },
+    {
+      "id": "VariableID:11028:7132",
+      "name": "Effects/focus-ring",
+      "light": {
+        "r": 0.8196078538894653,
+        "g": 0.8352941274642944,
+        "b": 0.8588235378265381,
+        "a": 1
+      },
+      "dark": {
+        "r": 0.21176470816135406,
+        "g": 0.2549019753932953,
+        "b": 0.32549020648002625,
+        "a": 1
+      }
+    },
+    {
+      "id": "VariableID:11028:7359",
+      "name": "Effects/focus-ring-input",
+      "light": {
+        "r": 0.8980392217636108,
+        "g": 0.9058823585510254,
+        "b": 0.9215686321258545,
+        "a": 1
+      },
+      "dark": {
+        "r": 0.11764705926179886,
+        "g": 0.16078431904315948,
+        "b": 0.2235294133424759,
+        "a": 1
+      }
+    },
+    {
+      "id": "VariableID:9723:5028",
+      "name": "Effects/primary-focus-ring",
+      "light": {
+        "r": 0.8196078538894653,
+        "g": 0.8352941274642944,
+        "b": 0.8588235378265381,
+        "a": 1
+      },
+      "dark": {
+        "r": 0.21176470816135406,
+        "g": 0.2549019753932953,
+        "b": 0.32549020648002625,
+        "a": 1
+      }
+    },
+    {
+      "id": "VariableID:9723:5017",
+      "name": "Effects/secondary-focus-ring",
+      "light": {
+        "r": 0.16862745583057404,
+        "g": 0.49803921580314636,
+        "b": 1,
+        "a": 0.3
+      },
+      "dark": {
+        "r": 0.16862745583057404,
+        "g": 0.49803921580314636,
+        "b": 1,
+        "a": 0.5
+      }
+    },
+    {
+      "id": "VariableID:9723:5019",
+      "name": "Effects/error-focus-ring",
+      "light": {
+        "r": 0.9843137264251709,
+        "g": 0.1725490242242813,
+        "b": 0.21176470816135406,
+        "a": 0.3
+      },
+      "dark": {
+        "r": 0.9843137264251709,
+        "g": 0.1725490242242813,
+        "b": 0.21176470816135406,
+        "a": 0.5
+      }
+    },
+    {
+      "id": "VariableID:9723:5020",
+      "name": "Effects/success-focus-ring",
+      "light": {
+        "r": 0,
+        "g": 0.7372549176216125,
+        "b": 0.4901960790157318,
+        "a": 0.3
+      },
+      "dark": {
+        "r": 0,
+        "g": 0.7372549176216125,
+        "b": 0.4901960790157318,
+        "a": 0.5
+      }
+    },
+    {
+      "id": "VariableID:9723:5021",
+      "name": "Effects/warning-focus-ring",
+      "light": {
+        "r": 1,
+        "g": 0.4117647111415863,
+        "b": 0,
+        "a": 0.3
+      },
+      "dark": {
+        "r": 1,
+        "g": 0.4117647111415863,
+        "b": 0,
+        "a": 0.5
+      }
+    },
+    {
+      "id": "VariableID:9723:5023",
+      "name": "Effects/info-focus-ring",
+      "light": {
+        "r": 0,
+        "g": 0.6509804129600525,
+        "b": 0.95686274766922,
+        "a": 0.3
+      },
+      "dark": {
+        "r": 0,
+        "g": 0.6509804129600525,
+        "b": 0.95686274766922,
+        "a": 0.5
+      }
+    },
+    {
+      "id": "VariableID:10125:517",
+      "name": "white/25",
+      "light": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.25
+      },
+      "dark": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.25
+      }
+    },
+    {
+      "id": "VariableID:22879:11471",
+      "name": "Effects/Gradient/default",
+      "light": {
+        "r": 0.062745101749897,
+        "g": 0.0941176488995552,
+        "b": 0.1568627506494522,
+        "a": 1
+      },
+      "dark": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    },
+    {
+      "id": "VariableID:9696:4521",
+      "name": "Effects/Gradient/muted",
+      "light": {
+        "r": 0.21176470816135406,
+        "g": 0.2549019753932953,
+        "b": 0.32549020648002625,
+        "a": 1
+      },
+      "dark": {
+        "r": 0.8980392217636108,
+        "g": 0.9058823585510254,
+        "b": 0.9215686321258545,
+        "a": 1
+      }
+    },
+    {
+      "id": "VariableID:7111:13",
+      "name": "Background/Secondary/default",
+      "light": {
+        "r": 0.5568627715110779,
+        "g": 0.772549033164978,
+        "b": 1,
+        "a": 1
+      },
+      "dark": {
+        "r": 0.3176470696926117,
+        "g": 0.6352941393852234,
+        "b": 1,
+        "a": 1
+      }
+    },
+    {
+      "id": "VariableID:8860:1351",
+      "name": "Background/Secondary/muted",
+      "light": {
+        "r": 0.7450980544090271,
+        "g": 0.8588235378265381,
+        "b": 1,
+        "a": 1
+      },
+      "dark": {
+        "r": 0.5568627715110779,
+        "g": 0.772549033164978,
+        "b": 1,
+        "a": 1
+      }
+    },
+    {
+      "id": "VariableID:7120:40",
+      "name": "Background/Error/default",
+      "light": {
+        "r": 1,
+        "g": 0.6352941393852234,
+        "b": 0.6352941393852234,
+        "a": 1
+      },
+      "dark": {
+        "r": 1,
+        "g": 0.3921568691730499,
+        "b": 0.40392157435417175,
+        "a": 1
+      }
+    },
+    {
+      "id": "VariableID:9271:2790",
+      "name": "Background/Error/muted",
+      "light": {
+        "r": 1,
+        "g": 0.7882353067398071,
+        "b": 0.7882353067398071,
+        "a": 1
+      },
+      "dark": {
+        "r": 1,
+        "g": 0.6352941393852234,
+        "b": 0.6352941393852234,
+        "a": 1
+      }
+    }
+  ]
+}

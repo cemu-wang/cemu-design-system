@@ -1,4 +1,4 @@
-:root {
+:root, [data-theme="light"] {
   --color-primary: #101828;
   --color-primary-foreground: #ffffff;
   --color-primary-hover: #364153;
@@ -19,14 +19,6 @@
   --focus-secondary: rgba(43, 127, 255, 0.3);
   --focus-default: #d1d5db;
   --focus-destructive: rgba(251, 44, 54, 0.3);
-  --font-family: "Geist Mono";
-  --font-weight-medium: 500;
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-base: 16px;
-  --line-height-xs: 16px;
-  --line-height-sm: 20px;
-  --line-height-base: 24px;
   --radius-sm: 12px;
   --radius-md: 14px;
   --radius-lg: 16px;
@@ -38,7 +30,7 @@
   --spacing-16: 16px;
 }
 
-:root[data-theme="dark"] {
+[data-theme="dark"] {
   --color-primary: #ffffff;
   --color-primary-foreground: #101828;
   --color-primary-hover: #e5e7eb;

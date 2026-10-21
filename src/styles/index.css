@@ -1,0 +1,17 @@
+/* Public entry point: semantic tokens, Figma styles, then shared defaults. */
+@import "./fonts.css";
+@import "./tokens.css";
+@import "./figma-styles.css";
+
+:where(body, .ds-scope) {
+  font: var(--text-base-font-regular);
+  letter-spacing: var(--text-base-font-regular-letter-spacing);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(button, input, textarea, select) {
+  font: inherit;
+  letter-spacing: inherit;
+}

@@ -1,0 +1,1065 @@
+/* Generated from src/tokens/figma-styles.json. Run npm run tokens:build. */
+
+:root, [lang|="en"], [data-typography="english"] {
+  --font-family: "Geist Mono", "PingFang UI SC", "PingFang SC", monospace;
+  --font-size-xs: 12px;
+  --line-height-xs: 16px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-size-sm: 14px;
+  --line-height-sm: 20px;
+  --font-size-base: 16px;
+  --line-height-base: 24px;
+  --font-size-lg: 18px;
+  --line-height-lg: 26px;
+  --font-size-xl: 20px;
+  --line-height-xl: 28px;
+  --font-size-2xl: 24px;
+  --line-height-2xl: 30px;
+  --font-size-3xl: 28px;
+  --line-height-3xl: 34px;
+  --font-size-4xl: 32px;
+  --line-height-4xl: 38px;
+  --font-size-5xl: 40px;
+  --line-height-5xl: 46px;
+  --font-size-6xl: 48px;
+  --line-height-6xl: 54px;
+  --font-size-7xl: 60px;
+  --line-height-7xl: 66px;
+  --font-size-8xl: 72px;
+  --line-height-8xl: 78px;
+  --text-xs-font-regular: var(--font-weight-regular) var(--font-size-xs)/var(--line-height-xs) var(--font-family);
+  --text-xs-font-regular-letter-spacing: 0em;
+  --text-xs-font-regular-paragraph-spacing: 0px;
+  --text-xs-font-regular-paragraph-indent: 0px;
+  --text-xs-font-medium: var(--font-weight-medium) var(--font-size-xs)/var(--line-height-xs) var(--font-family);
+  --text-xs-font-medium-letter-spacing: 0em;
+  --text-xs-font-medium-paragraph-spacing: 0px;
+  --text-xs-font-medium-paragraph-indent: 0px;
+  --text-xs-font-semibold: var(--font-weight-semibold) var(--font-size-xs)/var(--line-height-xs) var(--font-family);
+  --text-xs-font-semibold-letter-spacing: 0em;
+  --text-xs-font-semibold-paragraph-spacing: 0px;
+  --text-xs-font-semibold-paragraph-indent: 0px;
+  --text-sm-font-regular: var(--font-weight-regular) var(--font-size-sm)/var(--line-height-sm) var(--font-family);
+  --text-sm-font-regular-letter-spacing: 0em;
+  --text-sm-font-regular-paragraph-spacing: 0px;
+  --text-sm-font-regular-paragraph-indent: 0px;
+  --text-sm-font-medium: var(--font-weight-medium) var(--font-size-sm)/var(--line-height-sm) var(--font-family);
+  --text-sm-font-medium-letter-spacing: 0em;
+  --text-sm-font-medium-paragraph-spacing: 0px;
+  --text-sm-font-medium-paragraph-indent: 0px;
+  --text-sm-font-semibold: var(--font-weight-semibold) var(--font-size-sm)/var(--line-height-sm) var(--font-family);
+  --text-sm-font-semibold-letter-spacing: 0em;
+  --text-sm-font-semibold-paragraph-spacing: 0px;
+  --text-sm-font-semibold-paragraph-indent: 0px;
+  --text-base-font-regular: var(--font-weight-regular) var(--font-size-base)/var(--line-height-base) var(--font-family);
+  --text-base-font-regular-letter-spacing: 0em;
+  --text-base-font-regular-paragraph-spacing: 0px;
+  --text-base-font-regular-paragraph-indent: 0px;
+  --text-base-font-medium: var(--font-weight-medium) var(--font-size-base)/var(--line-height-base) var(--font-family);
+  --text-base-font-medium-letter-spacing: 0em;
+  --text-base-font-medium-paragraph-spacing: 0px;
+  --text-base-font-medium-paragraph-indent: 0px;
+  --text-base-font-semibold: var(--font-weight-semibold) var(--font-size-base)/var(--line-height-base) var(--font-family);
+  --text-base-font-semibold-letter-spacing: 0em;
+  --text-base-font-semibold-paragraph-spacing: 0px;
+  --text-base-font-semibold-paragraph-indent: 0px;
+  --text-lg-font-regular: var(--font-weight-regular) var(--font-size-lg)/var(--line-height-lg) var(--font-family);
+  --text-lg-font-regular-letter-spacing: 0em;
+  --text-lg-font-regular-paragraph-spacing: 0px;
+  --text-lg-font-regular-paragraph-indent: 0px;
+  --text-lg-font-medium: var(--font-weight-medium) var(--font-size-lg)/var(--line-height-lg) var(--font-family);
+  --text-lg-font-medium-letter-spacing: 0em;
+  --text-lg-font-medium-paragraph-spacing: 0px;
+  --text-lg-font-medium-paragraph-indent: 0px;
+  --text-lg-font-semibold: var(--font-weight-semibold) var(--font-size-lg)/var(--line-height-lg) var(--font-family);
+  --text-lg-font-semibold-letter-spacing: 0em;
+  --text-lg-font-semibold-paragraph-spacing: 0px;
+  --text-lg-font-semibold-paragraph-indent: 0px;
+  --text-xl-font-regular: var(--font-weight-regular) var(--font-size-xl)/var(--line-height-xl) var(--font-family);
+  --text-xl-font-regular-letter-spacing: 0em;
+  --text-xl-font-regular-paragraph-spacing: 0px;
+  --text-xl-font-regular-paragraph-indent: 0px;
+  --text-xl-font-medium: var(--font-weight-medium) var(--font-size-xl)/var(--line-height-xl) var(--font-family);
+  --text-xl-font-medium-letter-spacing: 0em;
+  --text-xl-font-medium-paragraph-spacing: 0px;
+  --text-xl-font-medium-paragraph-indent: 0px;
+  --text-xl-font-semibold: var(--font-weight-semibold) var(--font-size-xl)/var(--line-height-xl) var(--font-family);
+  --text-xl-font-semibold-letter-spacing: 0em;
+  --text-xl-font-semibold-paragraph-spacing: 0px;
+  --text-xl-font-semibold-paragraph-indent: 0px;
+  --text-2xl-font-regular: var(--font-weight-regular) var(--font-size-2xl)/var(--line-height-2xl) var(--font-family);
+  --text-2xl-font-regular-letter-spacing: 0em;
+  --text-2xl-font-regular-paragraph-spacing: 0px;
+  --text-2xl-font-regular-paragraph-indent: 0px;
+  --text-2xl-font-medium: var(--font-weight-medium) var(--font-size-2xl)/var(--line-height-2xl) var(--font-family);
+  --text-2xl-font-medium-letter-spacing: 0em;
+  --text-2xl-font-medium-paragraph-spacing: 0px;
+  --text-2xl-font-medium-paragraph-indent: 0px;
+  --text-2xl-font-semibold: var(--font-weight-semibold) var(--font-size-2xl)/var(--line-height-2xl) var(--font-family);
+  --text-2xl-font-semibold-letter-spacing: 0em;
+  --text-2xl-font-semibold-paragraph-spacing: 0px;
+  --text-2xl-font-semibold-paragraph-indent: 0px;
+  --text-3xl-font-regular: var(--font-weight-regular) var(--font-size-3xl)/var(--line-height-3xl) var(--font-family);
+  --text-3xl-font-regular-letter-spacing: 0em;
+  --text-3xl-font-regular-paragraph-spacing: 0px;
+  --text-3xl-font-regular-paragraph-indent: 0px;
+  --text-3xl-font-medium: var(--font-weight-medium) var(--font-size-3xl)/var(--line-height-3xl) var(--font-family);
+  --text-3xl-font-medium-letter-spacing: 0em;
+  --text-3xl-font-medium-paragraph-spacing: 0px;
+  --text-3xl-font-medium-paragraph-indent: 0px;
+  --text-3xl-font-semibold: var(--font-weight-semibold) var(--font-size-3xl)/var(--line-height-3xl) var(--font-family);
+  --text-3xl-font-semibold-letter-spacing: 0em;
+  --text-3xl-font-semibold-paragraph-spacing: 0px;
+  --text-3xl-font-semibold-paragraph-indent: 0px;
+  --text-4xl-font-regular: var(--font-weight-regular) var(--font-size-4xl)/var(--line-height-4xl) var(--font-family);
+  --text-4xl-font-regular-letter-spacing: 0em;
+  --text-4xl-font-regular-paragraph-spacing: 0px;
+  --text-4xl-font-regular-paragraph-indent: 0px;
+  --text-4xl-font-medium: var(--font-weight-medium) var(--font-size-4xl)/var(--line-height-4xl) var(--font-family);
+  --text-4xl-font-medium-letter-spacing: 0em;
+  --text-4xl-font-medium-paragraph-spacing: 0px;
+  --text-4xl-font-medium-paragraph-indent: 0px;
+  --text-4xl-font-semibold: var(--font-weight-semibold) var(--font-size-4xl)/var(--line-height-4xl) var(--font-family);
+  --text-4xl-font-semibold-letter-spacing: 0em;
+  --text-4xl-font-semibold-paragraph-spacing: 0px;
+  --text-4xl-font-semibold-paragraph-indent: 0px;
+  --text-5xl-font-regular: var(--font-weight-regular) var(--font-size-5xl)/var(--line-height-5xl) var(--font-family);
+  --text-5xl-font-regular-letter-spacing: 0em;
+  --text-5xl-font-regular-paragraph-spacing: 0px;
+  --text-5xl-font-regular-paragraph-indent: 0px;
+  --text-5xl-font-medium: var(--font-weight-medium) var(--font-size-5xl)/var(--line-height-5xl) var(--font-family);
+  --text-5xl-font-medium-letter-spacing: 0em;
+  --text-5xl-font-medium-paragraph-spacing: 0px;
+  --text-5xl-font-medium-paragraph-indent: 0px;
+  --text-5xl-font-semibold: var(--font-weight-semibold) var(--font-size-5xl)/var(--line-height-5xl) var(--font-family);
+  --text-5xl-font-semibold-letter-spacing: 0em;
+  --text-5xl-font-semibold-paragraph-spacing: 0px;
+  --text-5xl-font-semibold-paragraph-indent: 0px;
+  --text-6xl-font-regular: var(--font-weight-regular) var(--font-size-6xl)/var(--line-height-6xl) var(--font-family);
+  --text-6xl-font-regular-letter-spacing: 0em;
+  --text-6xl-font-regular-paragraph-spacing: 0px;
+  --text-6xl-font-regular-paragraph-indent: 0px;
+  --text-6xl-font-medium: var(--font-weight-medium) var(--font-size-6xl)/var(--line-height-6xl) var(--font-family);
+  --text-6xl-font-medium-letter-spacing: 0em;
+  --text-6xl-font-medium-paragraph-spacing: 0px;
+  --text-6xl-font-medium-paragraph-indent: 0px;
+  --text-6xl-font-semibold: var(--font-weight-semibold) var(--font-size-6xl)/var(--line-height-6xl) var(--font-family);
+  --text-6xl-font-semibold-letter-spacing: 0em;
+  --text-6xl-font-semibold-paragraph-spacing: 0px;
+  --text-6xl-font-semibold-paragraph-indent: 0px;
+  --text-7xl-font-regular: var(--font-weight-regular) var(--font-size-7xl)/var(--line-height-7xl) var(--font-family);
+  --text-7xl-font-regular-letter-spacing: 0em;
+  --text-7xl-font-regular-paragraph-spacing: 0px;
+  --text-7xl-font-regular-paragraph-indent: 0px;
+  --text-7xl-font-medium: var(--font-weight-medium) var(--font-size-7xl)/var(--line-height-7xl) var(--font-family);
+  --text-7xl-font-medium-letter-spacing: 0em;
+  --text-7xl-font-medium-paragraph-spacing: 0px;
+  --text-7xl-font-medium-paragraph-indent: 0px;
+  --text-7xl-font-semibold: var(--font-weight-semibold) var(--font-size-7xl)/var(--line-height-7xl) var(--font-family);
+  --text-7xl-font-semibold-letter-spacing: 0em;
+  --text-7xl-font-semibold-paragraph-spacing: 0px;
+  --text-7xl-font-semibold-paragraph-indent: 0px;
+  --text-8xl-font-regular: var(--font-weight-regular) var(--font-size-8xl)/var(--line-height-8xl) var(--font-family);
+  --text-8xl-font-regular-letter-spacing: 0em;
+  --text-8xl-font-regular-paragraph-spacing: 0px;
+  --text-8xl-font-regular-paragraph-indent: 0px;
+  --text-8xl-font-medium: var(--font-weight-medium) var(--font-size-8xl)/var(--line-height-8xl) var(--font-family);
+  --text-8xl-font-medium-letter-spacing: 0em;
+  --text-8xl-font-medium-paragraph-spacing: 0px;
+  --text-8xl-font-medium-paragraph-indent: 0px;
+  --text-8xl-font-semibold: var(--font-weight-semibold) var(--font-size-8xl)/var(--line-height-8xl) var(--font-family);
+  --text-8xl-font-semibold-letter-spacing: 0em;
+  --text-8xl-font-semibold-paragraph-spacing: 0px;
+  --text-8xl-font-semibold-paragraph-indent: 0px;
+}
+
+[lang|="zh"], [data-typography="chinese"] {
+  --font-family: "PingFang UI SC", "PingFang SC", system-ui, sans-serif;
+  --font-size-xs: 12px;
+  --line-height-xs: 16px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-size-sm: 14px;
+  --line-height-sm: 20px;
+  --font-size-base: 16px;
+  --line-height-base: 24px;
+  --font-size-lg: 18px;
+  --line-height-lg: 26px;
+  --font-size-xl: 20px;
+  --line-height-xl: 28px;
+  --font-size-2xl: 24px;
+  --line-height-2xl: 30px;
+  --font-size-3xl: 28px;
+  --line-height-3xl: 34px;
+  --font-size-4xl: 32px;
+  --line-height-4xl: 38px;
+  --font-size-5xl: 40px;
+  --line-height-5xl: 46px;
+  --font-size-6xl: 48px;
+  --line-height-6xl: 54px;
+  --font-size-7xl: 60px;
+  --line-height-7xl: 66px;
+  --font-size-8xl: 72px;
+  --line-height-8xl: 78px;
+  --text-xs-font-regular: var(--font-weight-regular) var(--font-size-xs)/var(--line-height-xs) var(--font-family);
+  --text-xs-font-regular-letter-spacing: 0em;
+  --text-xs-font-regular-paragraph-spacing: 0px;
+  --text-xs-font-regular-paragraph-indent: 0px;
+  --text-xs-font-medium: var(--font-weight-medium) var(--font-size-xs)/var(--line-height-xs) var(--font-family);
+  --text-xs-font-medium-letter-spacing: 0em;
+  --text-xs-font-medium-paragraph-spacing: 0px;
+  --text-xs-font-medium-paragraph-indent: 0px;
+  --text-xs-font-semibold: var(--font-weight-semibold) var(--font-size-xs)/var(--line-height-xs) var(--font-family);
+  --text-xs-font-semibold-letter-spacing: 0em;
+  --text-xs-font-semibold-paragraph-spacing: 0px;
+  --text-xs-font-semibold-paragraph-indent: 0px;
+  --text-sm-font-regular: var(--font-weight-regular) var(--font-size-sm)/var(--line-height-sm) var(--font-family);
+  --text-sm-font-regular-letter-spacing: 0em;
+  --text-sm-font-regular-paragraph-spacing: 0px;
+  --text-sm-font-regular-paragraph-indent: 0px;
+  --text-sm-font-medium: var(--font-weight-medium) var(--font-size-sm)/var(--line-height-sm) var(--font-family);
+  --text-sm-font-medium-letter-spacing: 0em;
+  --text-sm-font-medium-paragraph-spacing: 0px;
+  --text-sm-font-medium-paragraph-indent: 0px;
+  --text-sm-font-semibold: var(--font-weight-semibold) var(--font-size-sm)/var(--line-height-sm) var(--font-family);
+  --text-sm-font-semibold-letter-spacing: 0em;
+  --text-sm-font-semibold-paragraph-spacing: 0px;
+  --text-sm-font-semibold-paragraph-indent: 0px;
+  --text-base-font-regular: var(--font-weight-regular) var(--font-size-base)/var(--line-height-base) var(--font-family);
+  --text-base-font-regular-letter-spacing: 0em;
+  --text-base-font-regular-paragraph-spacing: 0px;
+  --text-base-font-regular-paragraph-indent: 0px;
+  --text-base-font-medium: var(--font-weight-medium) var(--font-size-base)/var(--line-height-base) var(--font-family);
+  --text-base-font-medium-letter-spacing: 0em;
+  --text-base-font-medium-paragraph-spacing: 0px;
+  --text-base-font-medium-paragraph-indent: 0px;
+  --text-base-font-semibold: var(--font-weight-semibold) var(--font-size-base)/var(--line-height-base) var(--font-family);
+  --text-base-font-semibold-letter-spacing: 0em;
+  --text-base-font-semibold-paragraph-spacing: 0px;
+  --text-base-font-semibold-paragraph-indent: 0px;
+  --text-lg-font-regular: var(--font-weight-regular) var(--font-size-lg)/var(--line-height-lg) var(--font-family);
+  --text-lg-font-regular-letter-spacing: 0em;
+  --text-lg-font-regular-paragraph-spacing: 0px;
+  --text-lg-font-regular-paragraph-indent: 0px;
+  --text-lg-font-medium: var(--font-weight-medium) var(--font-size-lg)/var(--line-height-lg) var(--font-family);
+  --text-lg-font-medium-letter-spacing: 0em;
+  --text-lg-font-medium-paragraph-spacing: 0px;
+  --text-lg-font-medium-paragraph-indent: 0px;
+  --text-lg-font-semibold: var(--font-weight-semibold) var(--font-size-lg)/var(--line-height-lg) var(--font-family);
+  --text-lg-font-semibold-letter-spacing: 0em;
+  --text-lg-font-semibold-paragraph-spacing: 0px;
+  --text-lg-font-semibold-paragraph-indent: 0px;
+  --text-xl-font-regular: var(--font-weight-regular) var(--font-size-xl)/var(--line-height-xl) var(--font-family);
+  --text-xl-font-regular-letter-spacing: 0em;
+  --text-xl-font-regular-paragraph-spacing: 0px;
+  --text-xl-font-regular-paragraph-indent: 0px;
+  --text-xl-font-medium: var(--font-weight-medium) var(--font-size-xl)/var(--line-height-xl) var(--font-family);
+  --text-xl-font-medium-letter-spacing: 0em;
+  --text-xl-font-medium-paragraph-spacing: 0px;
+  --text-xl-font-medium-paragraph-indent: 0px;
+  --text-xl-font-semibold: var(--font-weight-semibold) var(--font-size-xl)/var(--line-height-xl) var(--font-family);
+  --text-xl-font-semibold-letter-spacing: 0em;
+  --text-xl-font-semibold-paragraph-spacing: 0px;
+  --text-xl-font-semibold-paragraph-indent: 0px;
+  --text-2xl-font-regular: var(--font-weight-regular) var(--font-size-2xl)/var(--line-height-2xl) var(--font-family);
+  --text-2xl-font-regular-letter-spacing: 0em;
+  --text-2xl-font-regular-paragraph-spacing: 0px;
+  --text-2xl-font-regular-paragraph-indent: 0px;
+  --text-2xl-font-medium: var(--font-weight-medium) var(--font-size-2xl)/var(--line-height-2xl) var(--font-family);
+  --text-2xl-font-medium-letter-spacing: 0em;
+  --text-2xl-font-medium-paragraph-spacing: 0px;
+  --text-2xl-font-medium-paragraph-indent: 0px;
+  --text-2xl-font-semibold: var(--font-weight-semibold) var(--font-size-2xl)/var(--line-height-2xl) var(--font-family);
+  --text-2xl-font-semibold-letter-spacing: 0em;
+  --text-2xl-font-semibold-paragraph-spacing: 0px;
+  --text-2xl-font-semibold-paragraph-indent: 0px;
+  --text-3xl-font-regular: var(--font-weight-regular) var(--font-size-3xl)/var(--line-height-3xl) var(--font-family);
+  --text-3xl-font-regular-letter-spacing: 0em;
+  --text-3xl-font-regular-paragraph-spacing: 0px;
+  --text-3xl-font-regular-paragraph-indent: 0px;
+  --text-3xl-font-medium: var(--font-weight-medium) var(--font-size-3xl)/var(--line-height-3xl) var(--font-family);
+  --text-3xl-font-medium-letter-spacing: 0em;
+  --text-3xl-font-medium-paragraph-spacing: 0px;
+  --text-3xl-font-medium-paragraph-indent: 0px;
+  --text-3xl-font-semibold: var(--font-weight-semibold) var(--font-size-3xl)/var(--line-height-3xl) var(--font-family);
+  --text-3xl-font-semibold-letter-spacing: 0em;
+  --text-3xl-font-semibold-paragraph-spacing: 0px;
+  --text-3xl-font-semibold-paragraph-indent: 0px;
+  --text-4xl-font-regular: var(--font-weight-regular) var(--font-size-4xl)/var(--line-height-4xl) var(--font-family);
+  --text-4xl-font-regular-letter-spacing: 0em;
+  --text-4xl-font-regular-paragraph-spacing: 0px;
+  --text-4xl-font-regular-paragraph-indent: 0px;
+  --text-4xl-font-medium: var(--font-weight-medium) var(--font-size-4xl)/var(--line-height-4xl) var(--font-family);
+  --text-4xl-font-medium-letter-spacing: 0em;
+  --text-4xl-font-medium-paragraph-spacing: 0px;
+  --text-4xl-font-medium-paragraph-indent: 0px;
+  --text-4xl-font-semibold: var(--font-weight-semibold) var(--font-size-4xl)/var(--line-height-4xl) var(--font-family);
+  --text-4xl-font-semibold-letter-spacing: 0em;
+  --text-4xl-font-semibold-paragraph-spacing: 0px;
+  --text-4xl-font-semibold-paragraph-indent: 0px;
+  --text-5xl-font-regular: var(--font-weight-regular) var(--font-size-5xl)/var(--line-height-5xl) var(--font-family);
+  --text-5xl-font-regular-letter-spacing: 0em;
+  --text-5xl-font-regular-paragraph-spacing: 0px;
+  --text-5xl-font-regular-paragraph-indent: 0px;
+  --text-5xl-font-medium: var(--font-weight-medium) var(--font-size-5xl)/var(--line-height-5xl) var(--font-family);
+  --text-5xl-font-medium-letter-spacing: 0em;
+  --text-5xl-font-medium-paragraph-spacing: 0px;
+  --text-5xl-font-medium-paragraph-indent: 0px;
+  --text-5xl-font-semibold: var(--font-weight-semibold) var(--font-size-5xl)/var(--line-height-5xl) var(--font-family);
+  --text-5xl-font-semibold-letter-spacing: 0em;
+  --text-5xl-font-semibold-paragraph-spacing: 0px;
+  --text-5xl-font-semibold-paragraph-indent: 0px;
+  --text-6xl-font-regular: var(--font-weight-regular) var(--font-size-6xl)/var(--line-height-6xl) var(--font-family);
+  --text-6xl-font-regular-letter-spacing: 0em;
+  --text-6xl-font-regular-paragraph-spacing: 0px;
+  --text-6xl-font-regular-paragraph-indent: 0px;
+  --text-6xl-font-medium: var(--font-weight-medium) var(--font-size-6xl)/var(--line-height-6xl) var(--font-family);
+  --text-6xl-font-medium-letter-spacing: 0em;
+  --text-6xl-font-medium-paragraph-spacing: 0px;
+  --text-6xl-font-medium-paragraph-indent: 0px;
+  --text-6xl-font-semibold: var(--font-weight-semibold) var(--font-size-6xl)/var(--line-height-6xl) var(--font-family);
+  --text-6xl-font-semibold-letter-spacing: 0em;
+  --text-6xl-font-semibold-paragraph-spacing: 0px;
+  --text-6xl-font-semibold-paragraph-indent: 0px;
+  --text-7xl-font-regular: var(--font-weight-regular) var(--font-size-7xl)/var(--line-height-7xl) var(--font-family);
+  --text-7xl-font-regular-letter-spacing: 0em;
+  --text-7xl-font-regular-paragraph-spacing: 0px;
+  --text-7xl-font-regular-paragraph-indent: 0px;
+  --text-7xl-font-medium: var(--font-weight-medium) var(--font-size-7xl)/var(--line-height-7xl) var(--font-family);
+  --text-7xl-font-medium-letter-spacing: 0em;
+  --text-7xl-font-medium-paragraph-spacing: 0px;
+  --text-7xl-font-medium-paragraph-indent: 0px;
+  --text-7xl-font-semibold: var(--font-weight-semibold) var(--font-size-7xl)/var(--line-height-7xl) var(--font-family);
+  --text-7xl-font-semibold-letter-spacing: 0em;
+  --text-7xl-font-semibold-paragraph-spacing: 0px;
+  --text-7xl-font-semibold-paragraph-indent: 0px;
+  --text-8xl-font-regular: var(--font-weight-regular) var(--font-size-8xl)/var(--line-height-8xl) var(--font-family);
+  --text-8xl-font-regular-letter-spacing: 0em;
+  --text-8xl-font-regular-paragraph-spacing: 0px;
+  --text-8xl-font-regular-paragraph-indent: 0px;
+  --text-8xl-font-medium: var(--font-weight-medium) var(--font-size-8xl)/var(--line-height-8xl) var(--font-family);
+  --text-8xl-font-medium-letter-spacing: 0em;
+  --text-8xl-font-medium-paragraph-spacing: 0px;
+  --text-8xl-font-medium-paragraph-indent: 0px;
+  --text-8xl-font-semibold: var(--font-weight-semibold) var(--font-size-8xl)/var(--line-height-8xl) var(--font-family);
+  --text-8xl-font-semibold-letter-spacing: 0em;
+  --text-8xl-font-semibold-paragraph-spacing: 0px;
+  --text-8xl-font-semibold-paragraph-indent: 0px;
+}
+
+:root, [data-theme="light"] {
+  --shadow-2xs: 0px 1px 0px 0px rgba(106, 114, 130, 0.18);
+  --shadow-xs: 0px 1px 4px 0px rgba(106, 114, 130, 0.18);
+  --shadow-sm: 0px 2px 8px -2px rgba(106, 114, 130, 0.18);
+  --shadow-md: 0px 4px 8px -2px rgba(106, 114, 130, 0.18);
+  --shadow-lg: 0px 8px 16px -4px rgba(106, 114, 130, 0.18);
+  --shadow-xl: 0px 12px 28px -6px rgba(106, 114, 130, 0.18);
+  --shadow-2xl: 0px 24px 32px -12px rgba(106, 114, 130, 0.18);
+  --shadow-inner: inset 0px 2px 8px 0px rgba(106, 114, 130, 0.18);
+  --blur-xs: 4px;
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+  --blur-2xl: 40px;
+  --blur-3xl: 64px;
+  --backdrop-blur-xs: 4px;
+  --backdrop-blur-sm: 8px;
+  --backdrop-blur-md: 12px;
+  --backdrop-blur-lg: 16px;
+  --backdrop-blur-xl: 24px;
+  --backdrop-blur-2xl: 40px;
+  --backdrop-blur-3xl: 64px;
+  --focus-ring: 0px 0px 0px 3px rgba(209, 213, 219, 1);
+  --focus-ring-input: 0px 0px 0px 3px rgba(229, 231, 235, 1);
+  --focus-ring-primary: 0px 0px 0px 3px rgba(209, 213, 219, 1);
+  --focus-ring-secondary: 0px 0px 0px 3px rgba(43, 127, 255, 0.3);
+  --focus-ring-error: 0px 0px 0px 3px rgba(251, 44, 54, 0.3);
+  --focus-ring-success: 0px 0px 0px 3px rgba(0, 188, 125, 0.3);
+  --focus-ring-warning: 0px 0px 0px 3px rgba(255, 105, 0, 0.3);
+  --focus-ring-info: 0px 0px 0px 3px rgba(0, 166, 244, 0.3);
+  --focus-ring-light: 0px 0px 0px 3px rgba(255, 255, 255, 0.25);
+  --gradient-primary: radial-gradient(ellipse 138.151373% 78.125002% at 52.049179% 50%, rgba(16, 24, 40, 1) 0%, rgba(54, 65, 83, 1) 85.000002%);
+  --gradient-secondary: radial-gradient(ellipse 138.151373% 78.125002% at 52.049179% 50%, rgba(142, 197, 255, 1) 0%, rgba(190, 219, 255, 1) 94.999999%);
+  --gradient-error: radial-gradient(ellipse 138.151373% 78.125002% at 52.049179% 50%, rgba(255, 162, 162, 1) 0%, rgba(255, 201, 201, 1) 94.999999%);
+}
+
+[data-theme="dark"] {
+  --shadow-2xs: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+  --shadow-xs: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0px 2px 8px -2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0px 4px 8px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0px 8px 16px -4px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0px 12px 28px -6px rgba(0, 0, 0, 0.3);
+  --shadow-2xl: 0px 24px 32px -12px rgba(0, 0, 0, 0.3);
+  --shadow-inner: inset 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  --blur-xs: 4px;
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+  --blur-2xl: 40px;
+  --blur-3xl: 64px;
+  --backdrop-blur-xs: 4px;
+  --backdrop-blur-sm: 8px;
+  --backdrop-blur-md: 12px;
+  --backdrop-blur-lg: 16px;
+  --backdrop-blur-xl: 24px;
+  --backdrop-blur-2xl: 40px;
+  --backdrop-blur-3xl: 64px;
+  --focus-ring: 0px 0px 0px 3px rgba(54, 65, 83, 1);
+  --focus-ring-input: 0px 0px 0px 3px rgba(30, 41, 57, 1);
+  --focus-ring-primary: 0px 0px 0px 3px rgba(54, 65, 83, 1);
+  --focus-ring-secondary: 0px 0px 0px 3px rgba(43, 127, 255, 0.5);
+  --focus-ring-error: 0px 0px 0px 3px rgba(251, 44, 54, 0.5);
+  --focus-ring-success: 0px 0px 0px 3px rgba(0, 188, 125, 0.5);
+  --focus-ring-warning: 0px 0px 0px 3px rgba(255, 105, 0, 0.5);
+  --focus-ring-info: 0px 0px 0px 3px rgba(0, 166, 244, 0.5);
+  --focus-ring-light: 0px 0px 0px 3px rgba(255, 255, 255, 0.25);
+  --gradient-primary: radial-gradient(ellipse 138.151373% 78.125002% at 52.049179% 50%, rgba(255, 255, 255, 1) 0%, rgba(229, 231, 235, 1) 85.000002%);
+  --gradient-secondary: radial-gradient(ellipse 138.151373% 78.125002% at 52.049179% 50%, rgba(81, 162, 255, 1) 0%, rgba(142, 197, 255, 1) 94.999999%);
+  --gradient-error: radial-gradient(ellipse 138.151373% 78.125002% at 52.049179% 50%, rgba(255, 100, 103, 1) 0%, rgba(255, 162, 162, 1) 94.999999%);
+}
+
+:root {
+  --grid-desktop-columns: 12;
+  --grid-desktop-column-width: 88px;
+  --grid-desktop-gutter: 24px;
+  --grid-desktop-width: 1320px;
+  --grid-mobile-columns: 2;
+  --grid-mobile-column-width: 164px;
+  --grid-mobile-gutter: 16px;
+  --grid-mobile-width: 344px;
+}
+
+.text-xs-font-regular, [data-text-style="text-xs/font-regular"] {
+  font: var(--text-xs-font-regular);
+  letter-spacing: var(--text-xs-font-regular-letter-spacing);
+  text-indent: var(--text-xs-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-xs-font-regular > p + p, [data-text-style="text-xs/font-regular"] > p + p {
+  margin-block-start: var(--text-xs-font-regular-paragraph-spacing);
+}
+
+.text-xs-font-medium, [data-text-style="text-xs/font-medium"] {
+  font: var(--text-xs-font-medium);
+  letter-spacing: var(--text-xs-font-medium-letter-spacing);
+  text-indent: var(--text-xs-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-xs-font-medium > p + p, [data-text-style="text-xs/font-medium"] > p + p {
+  margin-block-start: var(--text-xs-font-medium-paragraph-spacing);
+}
+
+.text-xs-font-semibold, [data-text-style="text-xs/font-semibold"] {
+  font: var(--text-xs-font-semibold);
+  letter-spacing: var(--text-xs-font-semibold-letter-spacing);
+  text-indent: var(--text-xs-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-xs-font-semibold > p + p, [data-text-style="text-xs/font-semibold"] > p + p {
+  margin-block-start: var(--text-xs-font-semibold-paragraph-spacing);
+}
+
+.text-sm-font-regular, [data-text-style="text-sm/font-regular"] {
+  font: var(--text-sm-font-regular);
+  letter-spacing: var(--text-sm-font-regular-letter-spacing);
+  text-indent: var(--text-sm-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-sm-font-regular > p + p, [data-text-style="text-sm/font-regular"] > p + p {
+  margin-block-start: var(--text-sm-font-regular-paragraph-spacing);
+}
+
+.text-sm-font-medium, [data-text-style="text-sm/font-medium"] {
+  font: var(--text-sm-font-medium);
+  letter-spacing: var(--text-sm-font-medium-letter-spacing);
+  text-indent: var(--text-sm-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-sm-font-medium > p + p, [data-text-style="text-sm/font-medium"] > p + p {
+  margin-block-start: var(--text-sm-font-medium-paragraph-spacing);
+}
+
+.text-sm-font-semibold, [data-text-style="text-sm/font-semibold"] {
+  font: var(--text-sm-font-semibold);
+  letter-spacing: var(--text-sm-font-semibold-letter-spacing);
+  text-indent: var(--text-sm-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-sm-font-semibold > p + p, [data-text-style="text-sm/font-semibold"] > p + p {
+  margin-block-start: var(--text-sm-font-semibold-paragraph-spacing);
+}
+
+.text-base-font-regular, [data-text-style="text-base/font-regular"] {
+  font: var(--text-base-font-regular);
+  letter-spacing: var(--text-base-font-regular-letter-spacing);
+  text-indent: var(--text-base-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-base-font-regular > p + p, [data-text-style="text-base/font-regular"] > p + p {
+  margin-block-start: var(--text-base-font-regular-paragraph-spacing);
+}
+
+.text-base-font-medium, [data-text-style="text-base/font-medium"] {
+  font: var(--text-base-font-medium);
+  letter-spacing: var(--text-base-font-medium-letter-spacing);
+  text-indent: var(--text-base-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-base-font-medium > p + p, [data-text-style="text-base/font-medium"] > p + p {
+  margin-block-start: var(--text-base-font-medium-paragraph-spacing);
+}
+
+.text-base-font-semibold, [data-text-style="text-base/font-semibold"] {
+  font: var(--text-base-font-semibold);
+  letter-spacing: var(--text-base-font-semibold-letter-spacing);
+  text-indent: var(--text-base-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-base-font-semibold > p + p, [data-text-style="text-base/font-semibold"] > p + p {
+  margin-block-start: var(--text-base-font-semibold-paragraph-spacing);
+}
+
+.text-lg-font-regular, [data-text-style="text-lg/font-regular"] {
+  font: var(--text-lg-font-regular);
+  letter-spacing: var(--text-lg-font-regular-letter-spacing);
+  text-indent: var(--text-lg-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-lg-font-regular > p + p, [data-text-style="text-lg/font-regular"] > p + p {
+  margin-block-start: var(--text-lg-font-regular-paragraph-spacing);
+}
+
+.text-lg-font-medium, [data-text-style="text-lg/font-medium"] {
+  font: var(--text-lg-font-medium);
+  letter-spacing: var(--text-lg-font-medium-letter-spacing);
+  text-indent: var(--text-lg-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-lg-font-medium > p + p, [data-text-style="text-lg/font-medium"] > p + p {
+  margin-block-start: var(--text-lg-font-medium-paragraph-spacing);
+}
+
+.text-lg-font-semibold, [data-text-style="text-lg/font-semibold"] {
+  font: var(--text-lg-font-semibold);
+  letter-spacing: var(--text-lg-font-semibold-letter-spacing);
+  text-indent: var(--text-lg-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-lg-font-semibold > p + p, [data-text-style="text-lg/font-semibold"] > p + p {
+  margin-block-start: var(--text-lg-font-semibold-paragraph-spacing);
+}
+
+.text-xl-font-regular, [data-text-style="text-xl/font-regular"] {
+  font: var(--text-xl-font-regular);
+  letter-spacing: var(--text-xl-font-regular-letter-spacing);
+  text-indent: var(--text-xl-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-xl-font-regular > p + p, [data-text-style="text-xl/font-regular"] > p + p {
+  margin-block-start: var(--text-xl-font-regular-paragraph-spacing);
+}
+
+.text-xl-font-medium, [data-text-style="text-xl/font-medium"] {
+  font: var(--text-xl-font-medium);
+  letter-spacing: var(--text-xl-font-medium-letter-spacing);
+  text-indent: var(--text-xl-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-xl-font-medium > p + p, [data-text-style="text-xl/font-medium"] > p + p {
+  margin-block-start: var(--text-xl-font-medium-paragraph-spacing);
+}
+
+.text-xl-font-semibold, [data-text-style="text-xl/font-semibold"] {
+  font: var(--text-xl-font-semibold);
+  letter-spacing: var(--text-xl-font-semibold-letter-spacing);
+  text-indent: var(--text-xl-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-xl-font-semibold > p + p, [data-text-style="text-xl/font-semibold"] > p + p {
+  margin-block-start: var(--text-xl-font-semibold-paragraph-spacing);
+}
+
+.text-2xl-font-regular, [data-text-style="text-2xl/font-regular"] {
+  font: var(--text-2xl-font-regular);
+  letter-spacing: var(--text-2xl-font-regular-letter-spacing);
+  text-indent: var(--text-2xl-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-2xl-font-regular > p + p, [data-text-style="text-2xl/font-regular"] > p + p {
+  margin-block-start: var(--text-2xl-font-regular-paragraph-spacing);
+}
+
+.text-2xl-font-medium, [data-text-style="text-2xl/font-medium"] {
+  font: var(--text-2xl-font-medium);
+  letter-spacing: var(--text-2xl-font-medium-letter-spacing);
+  text-indent: var(--text-2xl-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-2xl-font-medium > p + p, [data-text-style="text-2xl/font-medium"] > p + p {
+  margin-block-start: var(--text-2xl-font-medium-paragraph-spacing);
+}
+
+.text-2xl-font-semibold, [data-text-style="text-2xl/font-semibold"] {
+  font: var(--text-2xl-font-semibold);
+  letter-spacing: var(--text-2xl-font-semibold-letter-spacing);
+  text-indent: var(--text-2xl-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-2xl-font-semibold > p + p, [data-text-style="text-2xl/font-semibold"] > p + p {
+  margin-block-start: var(--text-2xl-font-semibold-paragraph-spacing);
+}
+
+.text-3xl-font-regular, [data-text-style="text-3xl/font-regular"] {
+  font: var(--text-3xl-font-regular);
+  letter-spacing: var(--text-3xl-font-regular-letter-spacing);
+  text-indent: var(--text-3xl-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-3xl-font-regular > p + p, [data-text-style="text-3xl/font-regular"] > p + p {
+  margin-block-start: var(--text-3xl-font-regular-paragraph-spacing);
+}
+
+.text-3xl-font-medium, [data-text-style="text-3xl/font-medium"] {
+  font: var(--text-3xl-font-medium);
+  letter-spacing: var(--text-3xl-font-medium-letter-spacing);
+  text-indent: var(--text-3xl-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-3xl-font-medium > p + p, [data-text-style="text-3xl/font-medium"] > p + p {
+  margin-block-start: var(--text-3xl-font-medium-paragraph-spacing);
+}
+
+.text-3xl-font-semibold, [data-text-style="text-3xl/font-semibold"] {
+  font: var(--text-3xl-font-semibold);
+  letter-spacing: var(--text-3xl-font-semibold-letter-spacing);
+  text-indent: var(--text-3xl-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-3xl-font-semibold > p + p, [data-text-style="text-3xl/font-semibold"] > p + p {
+  margin-block-start: var(--text-3xl-font-semibold-paragraph-spacing);
+}
+
+.text-4xl-font-regular, [data-text-style="text-4xl/font-regular"] {
+  font: var(--text-4xl-font-regular);
+  letter-spacing: var(--text-4xl-font-regular-letter-spacing);
+  text-indent: var(--text-4xl-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-4xl-font-regular > p + p, [data-text-style="text-4xl/font-regular"] > p + p {
+  margin-block-start: var(--text-4xl-font-regular-paragraph-spacing);
+}
+
+.text-4xl-font-medium, [data-text-style="text-4xl/font-medium"] {
+  font: var(--text-4xl-font-medium);
+  letter-spacing: var(--text-4xl-font-medium-letter-spacing);
+  text-indent: var(--text-4xl-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-4xl-font-medium > p + p, [data-text-style="text-4xl/font-medium"] > p + p {
+  margin-block-start: var(--text-4xl-font-medium-paragraph-spacing);
+}
+
+.text-4xl-font-semibold, [data-text-style="text-4xl/font-semibold"] {
+  font: var(--text-4xl-font-semibold);
+  letter-spacing: var(--text-4xl-font-semibold-letter-spacing);
+  text-indent: var(--text-4xl-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-4xl-font-semibold > p + p, [data-text-style="text-4xl/font-semibold"] > p + p {
+  margin-block-start: var(--text-4xl-font-semibold-paragraph-spacing);
+}
+
+.text-5xl-font-regular, [data-text-style="text-5xl/font-regular"] {
+  font: var(--text-5xl-font-regular);
+  letter-spacing: var(--text-5xl-font-regular-letter-spacing);
+  text-indent: var(--text-5xl-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-5xl-font-regular > p + p, [data-text-style="text-5xl/font-regular"] > p + p {
+  margin-block-start: var(--text-5xl-font-regular-paragraph-spacing);
+}
+
+.text-5xl-font-medium, [data-text-style="text-5xl/font-medium"] {
+  font: var(--text-5xl-font-medium);
+  letter-spacing: var(--text-5xl-font-medium-letter-spacing);
+  text-indent: var(--text-5xl-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-5xl-font-medium > p + p, [data-text-style="text-5xl/font-medium"] > p + p {
+  margin-block-start: var(--text-5xl-font-medium-paragraph-spacing);
+}
+
+.text-5xl-font-semibold, [data-text-style="text-5xl/font-semibold"] {
+  font: var(--text-5xl-font-semibold);
+  letter-spacing: var(--text-5xl-font-semibold-letter-spacing);
+  text-indent: var(--text-5xl-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-5xl-font-semibold > p + p, [data-text-style="text-5xl/font-semibold"] > p + p {
+  margin-block-start: var(--text-5xl-font-semibold-paragraph-spacing);
+}
+
+.text-6xl-font-regular, [data-text-style="text-6xl/font-regular"] {
+  font: var(--text-6xl-font-regular);
+  letter-spacing: var(--text-6xl-font-regular-letter-spacing);
+  text-indent: var(--text-6xl-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-6xl-font-regular > p + p, [data-text-style="text-6xl/font-regular"] > p + p {
+  margin-block-start: var(--text-6xl-font-regular-paragraph-spacing);
+}
+
+.text-6xl-font-medium, [data-text-style="text-6xl/font-medium"] {
+  font: var(--text-6xl-font-medium);
+  letter-spacing: var(--text-6xl-font-medium-letter-spacing);
+  text-indent: var(--text-6xl-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-6xl-font-medium > p + p, [data-text-style="text-6xl/font-medium"] > p + p {
+  margin-block-start: var(--text-6xl-font-medium-paragraph-spacing);
+}
+
+.text-6xl-font-semibold, [data-text-style="text-6xl/font-semibold"] {
+  font: var(--text-6xl-font-semibold);
+  letter-spacing: var(--text-6xl-font-semibold-letter-spacing);
+  text-indent: var(--text-6xl-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-6xl-font-semibold > p + p, [data-text-style="text-6xl/font-semibold"] > p + p {
+  margin-block-start: var(--text-6xl-font-semibold-paragraph-spacing);
+}
+
+.text-7xl-font-regular, [data-text-style="text-7xl/font-regular"] {
+  font: var(--text-7xl-font-regular);
+  letter-spacing: var(--text-7xl-font-regular-letter-spacing);
+  text-indent: var(--text-7xl-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-7xl-font-regular > p + p, [data-text-style="text-7xl/font-regular"] > p + p {
+  margin-block-start: var(--text-7xl-font-regular-paragraph-spacing);
+}
+
+.text-7xl-font-medium, [data-text-style="text-7xl/font-medium"] {
+  font: var(--text-7xl-font-medium);
+  letter-spacing: var(--text-7xl-font-medium-letter-spacing);
+  text-indent: var(--text-7xl-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-7xl-font-medium > p + p, [data-text-style="text-7xl/font-medium"] > p + p {
+  margin-block-start: var(--text-7xl-font-medium-paragraph-spacing);
+}
+
+.text-7xl-font-semibold, [data-text-style="text-7xl/font-semibold"] {
+  font: var(--text-7xl-font-semibold);
+  letter-spacing: var(--text-7xl-font-semibold-letter-spacing);
+  text-indent: var(--text-7xl-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-7xl-font-semibold > p + p, [data-text-style="text-7xl/font-semibold"] > p + p {
+  margin-block-start: var(--text-7xl-font-semibold-paragraph-spacing);
+}
+
+.text-8xl-font-regular, [data-text-style="text-8xl/font-regular"] {
+  font: var(--text-8xl-font-regular);
+  letter-spacing: var(--text-8xl-font-regular-letter-spacing);
+  text-indent: var(--text-8xl-font-regular-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-8xl-font-regular > p + p, [data-text-style="text-8xl/font-regular"] > p + p {
+  margin-block-start: var(--text-8xl-font-regular-paragraph-spacing);
+}
+
+.text-8xl-font-medium, [data-text-style="text-8xl/font-medium"] {
+  font: var(--text-8xl-font-medium);
+  letter-spacing: var(--text-8xl-font-medium-letter-spacing);
+  text-indent: var(--text-8xl-font-medium-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-8xl-font-medium > p + p, [data-text-style="text-8xl/font-medium"] > p + p {
+  margin-block-start: var(--text-8xl-font-medium-paragraph-spacing);
+}
+
+.text-8xl-font-semibold, [data-text-style="text-8xl/font-semibold"] {
+  font: var(--text-8xl-font-semibold);
+  letter-spacing: var(--text-8xl-font-semibold-letter-spacing);
+  text-indent: var(--text-8xl-font-semibold-paragraph-indent);
+  text-transform: none;
+  text-decoration: none;
+  font-variant-caps: normal;
+}
+
+.text-8xl-font-semibold > p + p, [data-text-style="text-8xl/font-semibold"] > p + p {
+  margin-block-start: var(--text-8xl-font-semibold-paragraph-spacing);
+}
+
+.shadow-2xs {
+  box-shadow: var(--shadow-2xs);
+}
+
+.shadow-xs {
+  box-shadow: var(--shadow-xs);
+}
+
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+.shadow-xl {
+  box-shadow: var(--shadow-xl);
+}
+
+.shadow-2xl {
+  box-shadow: var(--shadow-2xl);
+}
+
+.shadow-inner {
+  box-shadow: var(--shadow-inner);
+}
+
+.blur-xs {
+  filter: blur(var(--blur-xs));
+}
+
+.blur-sm {
+  filter: blur(var(--blur-sm));
+}
+
+.blur-md {
+  filter: blur(var(--blur-md));
+}
+
+.blur-lg {
+  filter: blur(var(--blur-lg));
+}
+
+.blur-xl {
+  filter: blur(var(--blur-xl));
+}
+
+.blur-2xl {
+  filter: blur(var(--blur-2xl));
+}
+
+.blur-3xl {
+  filter: blur(var(--blur-3xl));
+}
+
+.backdrop-blur-xs {
+  backdrop-filter: blur(var(--backdrop-blur-xs));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-xs));
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(var(--backdrop-blur-sm));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-sm));
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(var(--backdrop-blur-md));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-md));
+}
+
+.backdrop-blur-lg {
+  backdrop-filter: blur(var(--backdrop-blur-lg));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-lg));
+}
+
+.backdrop-blur-xl {
+  backdrop-filter: blur(var(--backdrop-blur-xl));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-xl));
+}
+
+.backdrop-blur-2xl {
+  backdrop-filter: blur(var(--backdrop-blur-2xl));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-2xl));
+}
+
+.backdrop-blur-3xl {
+  backdrop-filter: blur(var(--backdrop-blur-3xl));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-3xl));
+}
+
+.focus-ring {
+  box-shadow: var(--focus-ring);
+}
+
+.focus-ring-input {
+  box-shadow: var(--focus-ring-input);
+}
+
+.focus-ring-primary {
+  box-shadow: var(--focus-ring-primary);
+}
+
+.focus-ring-secondary {
+  box-shadow: var(--focus-ring-secondary);
+}
+
+.focus-ring-error {
+  box-shadow: var(--focus-ring-error);
+}
+
+.focus-ring-success {
+  box-shadow: var(--focus-ring-success);
+}
+
+.focus-ring-warning {
+  box-shadow: var(--focus-ring-warning);
+}
+
+.focus-ring-info {
+  box-shadow: var(--focus-ring-info);
+}
+
+.focus-ring-light {
+  box-shadow: var(--focus-ring-light);
+}
+
+.gradient-primary {
+  background-image: var(--gradient-primary);
+}
+
+.gradient-secondary {
+  background-image: var(--gradient-secondary);
+}
+
+.gradient-error {
+  background-image: var(--gradient-error);
+}
+
+.grid-desktop {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-desktop-columns), minmax(0, 1fr));
+  gap: var(--grid-desktop-gutter);
+  width: 100%;
+  max-width: var(--grid-desktop-width);
+  margin-inline: auto;
+}
+
+.grid-mobile {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-mobile-columns), minmax(0, 1fr));
+  gap: var(--grid-mobile-gutter);
+  width: 100%;
+  max-width: var(--grid-mobile-width);
+  margin-inline: auto;
+}

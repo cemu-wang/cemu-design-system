@@ -38,8 +38,7 @@ function demoContent(type: SlotType): ReactNode {
             borderRadius: "50%",
             background: "#dbeafe",
             color: "#1d4ed8",
-            fontSize: 10,
-            fontWeight: 600,
+            font: "var(--text-xs-font-semibold)",
           }}
         >
           A
@@ -59,7 +58,7 @@ function demoContent(type: SlotType): ReactNode {
             height: "100%",
             background: "#ede9fe",
             color: "#6d28d9",
-            fontSize: 12,
+            font: "var(--text-xs-font-regular)",
           }}
         >
           ▧
@@ -75,7 +74,7 @@ function demoContent(type: SlotType): ReactNode {
             borderRadius: 9999,
             background: "var(--color-surface, #fff)",
             color: "var(--color-text, #101828)",
-            fontSize: 12,
+            font: "var(--text-xs-font-regular)",
             whiteSpace: "nowrap",
           }}
         >

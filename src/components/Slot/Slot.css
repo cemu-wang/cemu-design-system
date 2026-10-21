@@ -9,8 +9,8 @@
   flex-shrink: 0;
   min-height: var(--slot-size);
   color: inherit;
-  font-family: var(--font-family, "Geist Mono"), monospace;
-  font-weight: 400;
+  font: var(--slot-text-style);
+  letter-spacing: var(--slot-letter-spacing);
   vertical-align: middle;
 }
 
@@ -30,8 +30,10 @@
   --slot-flag-size: 14px;
   --slot-indicator-size: 14px;
   --slot-switch-width: 30px;
-  --slot-font-size: 12px;
-  --slot-line-height: 16px;
+  --slot-font-size: var(--font-size-xs);
+  --slot-line-height: var(--line-height-xs);
+  --slot-text-style: var(--text-xs-font-regular);
+  --slot-letter-spacing: var(--text-xs-font-regular-letter-spacing);
   --slot-kbd-radius: 4px;
   --slot-kbd-padding: 2px;
 }
@@ -42,8 +44,10 @@
   --slot-flag-size: 16px;
   --slot-indicator-size: 16px;
   --slot-switch-width: 38px;
-  --slot-font-size: 14px;
-  --slot-line-height: 20px;
+  --slot-font-size: var(--font-size-sm);
+  --slot-line-height: var(--line-height-sm);
+  --slot-text-style: var(--text-sm-font-regular);
+  --slot-letter-spacing: var(--text-sm-font-regular-letter-spacing);
   --slot-kbd-radius: 6px;
   --slot-kbd-padding: 4px;
 }
@@ -54,8 +58,10 @@
   --slot-flag-size: 20px;
   --slot-indicator-size: 20px;
   --slot-switch-width: 46px;
-  --slot-font-size: 16px;
-  --slot-line-height: 24px;
+  --slot-font-size: var(--font-size-base);
+  --slot-line-height: var(--line-height-base);
+  --slot-text-style: var(--text-base-font-regular);
+  --slot-letter-spacing: var(--text-base-font-regular-letter-spacing);
   --slot-kbd-radius: 8px;
   --slot-kbd-padding: 4px;
 }
@@ -208,7 +214,7 @@
   flex-shrink: 0;
   background: #ffffff;
   border-radius: 50%;
-  box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
+  box-shadow: var(--shadow-2xs);
 }
 
 /* Text */
@@ -243,9 +249,6 @@
   border-radius: var(--slot-kbd-radius);
   background: var(--color-surface, #ffffff);
   color: var(--color-text, #6a7282);
-  font-family: inherit;
-  font-size: var(--slot-font-size);
-  font-weight: 400;
-  line-height: var(--slot-line-height);
+  font: var(--slot-text-style);
   white-space: nowrap;
 }

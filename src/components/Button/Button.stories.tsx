@@ -1,15 +1,62 @@
-
 import type { Meta, StoryObj } from "@storybook/react-vite"
-import { Button } from "./Button"
+import { expect, fn, within } from "storybook/test"
+import { Button, type ButtonProps } from "./Button"
+
+function PlusIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+      strokeLinecap="round" aria-hidden="true" data-icon="plus">
+      <path d="M12 5v14M5 12h14" />
+    </svg>
+  )
+}
+
+function ArrowIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+      strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" data-icon="arrow">
+      <path d="M5 12h14m-6-6 6 6-6 6" />
+    </svg>
+  )
+}
+
+// Visibility controls belong to Storybook; Button receives renderable nodes.
+type ButtonStoryArgs = ButtonProps & {
+  showStartIcon?: boolean
+  showEndIcon?: boolean
+}
+
+function renderButton({ showStartIcon, showEndIcon, ...args }: ButtonStoryArgs) {
+  const startSlot = args.startSlot ?? (showStartIcon ? <PlusIcon /> : undefined)
+  const endSlot = args.endSlot ?? (showEndIcon ? <ArrowIcon /> : undefined)
+
+  return (
+    <Button
+      {...args}
+      startSlot={startSlot ?? (args.iconOnly && endSlot == null ? <PlusIcon /> : undefined)}
+      endSlot={endSlot}
+      aria-label={args["aria-label"] ?? (args.iconOnly ? "新增项目" : undefined)}
+    />
+  )
+}
+
+const variants = ["primary", "primaryOutline", "secondary", "soft", "outline", "ghost", "destructive"] as const
+const sizes = ["sm", "md", "lg"] as const
 
 const meta = {
   title: "Components/Button",
   component: Button,
   tags: ["autodocs"],
+  parameters: { layout: "centered" },
+  render: renderButton,
   args: {
     children: "Button",
     variant: "primary",
     size: "md",
+    showStartIcon: false,
+    showEndIcon: false,
+    iconOnly: false,
+    onClick: fn(),
   },
   argTypes: {
     variant: {
@@ -28,11 +75,27 @@ const meta = {
       control: "select",
       options: ["sm", "md", "lg"],
     },
+    children: { control: "text" },
+    showStartIcon: { name: "显示前置图标", control: "boolean" },
+    showEndIcon: { name: "显示后置图标", control: "boolean" },
+    iconOnly: { control: "boolean" },
+    loading: { control: "boolean" },
+    disabled: { control: "boolean" },
+    fullWidth: { control: "boolean" },
+    startSlot: { control: false, table: { category: "Slot content" } },
+    endSlot: { control: false, table: { category: "Slot content" } },
+    startSlotType: { control: false },
+    endSlotType: { control: false },
   },
-} satisfies Meta<typeof Button>
+} satisfies Meta<ButtonStoryArgs>
 
 export default meta
 type Story = StoryObj<typeof meta>
+
+export const Playground: Story = {
+  name: "Playground · 直接预览",
+  args: { showStartIcon: true, children: "Add item" },
+}
 
 export const Primary: Story = {}
 
@@ -65,5 +128,104 @@ export const Disabled: Story = {
 }
 
 export const Loading: Story = {
-  args: { loading: true },
+  args: { loading: true, showStartIcon: true, showEndIcon: true },
+  play: async ({ canvasElement }) => {
+    const button = within(canvasElement).getByRole("button", { name: "Button" })
+    await expect(button).toBeDisabled()
+    await expect(button).toHaveAttribute("aria-busy", "true")
+    await expect(button.querySelector(".button__spinner")).toBeInTheDocument()
+    await expect(button.querySelector("svg")).not.toBeInTheDocument()
+  },
+}
+
+export const StartIcon: Story = {
+  args: { showStartIcon: true, children: "Add item" },
+  play: async ({ canvasElement, args, userEvent }) => {
+    const button = within(canvasElement).getByRole("button", { name: "Add item" })
+    await expect(button.querySelector(".slot--icon svg[data-icon='plus']")).toBeInTheDocument()
+    await userEvent.click(button)
+    await expect(args.onClick).toHaveBeenCalledOnce()
+  },
+}
+
+export const EndIcon: Story = {
+  args: { showEndIcon: true, children: "Continue" },
+}
+
+export const BothIcons: Story = {
+  args: { showStartIcon: true, showEndIcon: true },
+  play: async ({ canvasElement }) => {
+    const button = within(canvasElement).getByRole("button", { name: "Button" })
+    await expect(button.querySelectorAll(".slot--icon svg")).toHaveLength(2)
+  },
+}
+
+export const IconOnly: Story = {
+  // Supply the actual SVG to the component, independent of visibility controls.
+  args: { iconOnly: true, startSlot: <PlusIcon />, "aria-label": "新增项目" },
+  play: async ({ canvasElement }) => {
+    const button = within(canvasElement).getByRole("button", { name: "新增项目" })
+    await expect(button.querySelector(".slot--icon svg[data-icon='plus']")).toBeInTheDocument()
+    await expect(button.querySelector(".button__label")).not.toBeInTheDocument()
+  },
+}
+
+export const IconOnlyEndSlot: Story = {
+  args: { iconOnly: true, endSlot: <ArrowIcon />, "aria-label": "下一步" },
+  play: async ({ canvasElement }) => {
+    const button = within(canvasElement).getByRole("button", { name: "下一步" })
+    await expect(button.querySelector("svg[data-icon='arrow']")).toBeInTheDocument()
+  },
+}
+
+export const IconOnlyLoading: Story = {
+  args: { iconOnly: true, startSlot: <PlusIcon />, loading: true, "aria-label": "正在新增" },
+}
+
+export const Sizes: Story = {
+  parameters: { controls: { disable: true } },
+  render: () => (
+    <div style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
+      {sizes.map(size => (
+        <Button key={size} size={size} startSlot={<PlusIcon />} endSlot={<ArrowIcon />}>{size.toUpperCase()}</Button>
+      ))}
+      {sizes.map(size => (
+        <Button key={`icon-${size}`} size={size} iconOnly startSlot={<PlusIcon />} aria-label={`新增项目 ${size}`} />
+      ))}
+    </div>
+  ),
+}
+
+export const SlotTypes: Story = {
+  parameters: { controls: { disable: true } },
+  render: () => (
+    <div style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
+      <Button variant="outline" startSlot="🇨🇳" startSlotType="flag">简体中文</Button>
+      <Button variant="outline" endSlot="⌘ K" endSlotType="kbd">Search</Button>
+      <Button variant="outline" endSlot="12" endSlotType="text">Notifications</Button>
+    </div>
+  ),
+}
+
+export const AllVariants: Story = {
+  name: "All Variants · 全部样式",
+  parameters: { controls: { disable: true }, layout: "padded" },
+  render: () => (
+    <div style={{ display: "grid", gap: 24 }}>
+      {variants.map(variant => (
+        <section key={variant}>
+          <h3 style={{ color: "var(--color-text)", font: "inherit", margin: "0 0 12px" }}>{variant}</h3>
+          <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
+            <Button variant={variant}>Button</Button>
+            {sizes.map(size => (
+              <Button key={size} variant={variant} size={size} startSlot={<PlusIcon />} endSlot={<ArrowIcon />}>Add item</Button>
+            ))}
+            <Button variant={variant} iconOnly startSlot={<PlusIcon />} aria-label={`新增项目 ${variant}`} />
+            <Button variant={variant} startSlot={<PlusIcon />} disabled>Disabled</Button>
+            <Button variant={variant} loading>Loading</Button>
+          </div>
+        </section>
+      ))}
+    </div>
+  ),
 }

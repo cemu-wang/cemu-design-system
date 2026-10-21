@@ -1,9 +1,9 @@
-
 import {
   forwardRef,
   type ButtonHTMLAttributes,
   type ReactNode,
 } from "react"
+import { Slot, type SlotType } from "../Slot/Slot"
 import "./Button.css"
 
 type ButtonVariant =
@@ -16,6 +16,7 @@ type ButtonVariant =
   | "destructive"
 
 type ButtonSize = "sm" | "md" | "lg"
+type ButtonSlotType = Exclude<SlotType, "checkbox" | "radio" | "switch">
 
 export interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -25,6 +26,8 @@ export interface ButtonProps
   iconOnly?: boolean
   startSlot?: ReactNode
   endSlot?: ReactNode
+  startSlotType?: ButtonSlotType
+  endSlotType?: ButtonSlotType
   loading?: boolean
   fullWidth?: boolean
 }
@@ -39,6 +42,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       iconOnly = false,
       startSlot,
       endSlot,
+      startSlotType = "icon",
+      endSlotType = "icon",
       loading = false,
       fullWidth = false,
       disabled,
@@ -49,6 +54,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     const label = children ?? text
+    const spinner = <span className="button__spinner" />
 
     return (
       <button
@@ -67,29 +73,31 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         aria-busy={loading || undefined}
       >
         {iconOnly ? (
-          <span className="button__slot" aria-hidden="true">
-            {loading ? (
-              <span className="button__spinner" />
-            ) : (
-              startSlot ?? endSlot
-            )}
-          </span>
+          <Slot
+            type={loading ? "icon" : startSlot != null ? startSlotType : endSlotType}
+            size={size}
+            aria-hidden="true"
+          >
+            {loading ? spinner : startSlot ?? endSlot}
+          </Slot>
         ) : (
           <>
             {(startSlot != null || loading) && (
-              <span className="button__slot" aria-hidden="true">
-                {loading ? (
-                  <span className="button__spinner" />
-                ) : startSlot}
-              </span>
+              <Slot
+                type={loading ? "icon" : startSlotType}
+                size={size}
+                aria-hidden="true"
+              >
+                {loading ? spinner : startSlot}
+              </Slot>
             )}
 
             <span className="button__label">{label}</span>
 
             {!loading && endSlot != null && (
-              <span className="button__slot" aria-hidden="true">
+              <Slot type={endSlotType} size={size} aria-hidden="true">
                 {endSlot}
-              </span>
+              </Slot>
             )}
           </>
         )}

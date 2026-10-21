@@ -32,8 +32,6 @@
   --button-font-size: var(--font-size-xs);
   --button-line-height: var(--line-height-xs);
   --label-padding: var(--spacing-4);
-  --slot-size: 16px;
-  --icon-size: 16px;
 }
 
 .button--md {
@@ -43,8 +41,6 @@
   --button-font-size: var(--font-size-sm);
   --button-line-height: var(--line-height-sm);
   --label-padding: var(--spacing-6);
-  --slot-size: 20px;
-  --icon-size: 18px;
 }
 
 .button--lg {
@@ -54,29 +50,11 @@
   --button-font-size: var(--font-size-base);
   --button-line-height: var(--line-height-base);
   --label-padding: var(--spacing-6);
-  --slot-size: 24px;
-  --icon-size: 20px;
 }
 
 /* Content */
 .button__label {
   padding: 0 var(--label-padding);
-}
-
-.button__slot {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--slot-size);
-  height: var(--slot-size);
-  flex-shrink: 0;
-}
-
-.button__slot svg,
-.button__slot img {
-  width: var(--icon-size);
-  height: var(--icon-size);
-  object-fit: contain;
 }
 
 .button--icon-only {
@@ -211,6 +189,8 @@
 
 /* Loading */
 .button__spinner {
+  box-sizing: border-box;
+  display: block;
   width: 70%;
   height: 70%;
   border: 2px solid currentColor;

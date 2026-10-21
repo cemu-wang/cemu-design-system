@@ -4,9 +4,7 @@ import { Button, type ButtonProps } from "./Button"
 import { Text } from "../Text/Text"
 
 import { Icon, type IconName } from "../Icon/Icon"
-import { iconPaths } from "../Icon/icon-data"
-
-const iconNames = Object.keys(iconPaths) as IconName[]
+import { iconNames } from "../Icon/icon-names"
 
 // Visibility controls belong to Storybook; Button receives renderable nodes.
 type ButtonStoryArgs = ButtonProps & {

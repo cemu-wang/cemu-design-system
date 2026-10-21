@@ -18,8 +18,10 @@ SVG fill uses `currentColor`; themes and disabled states inherit parent colors.
 Icons are decorative by default. Supply `aria-label` or `aria-labelledby` for
 standalone meaningful icons; icon-only buttons need a label on the button.
 
-The initial catalog contains 20 common icons. Names use Google's snake_case
-and are checked by TypeScript. Inspect Components/Icon/Gallery in Storybook.
+The complete pinned catalog contains 4,301 icons. Names use Google's snake_case
+and are checked by TypeScript. Components/Icon/Gallery supports name search,
+60 icons per page, selection, and a live Button preview. Button controls also
+list the complete catalog.
 
 ## Source and updates
 
@@ -30,8 +32,28 @@ Source path: `symbols/web/{name}/materialsymbolsrounded/{name}_24px.svg`.
 The unqualified 24px assets use weight 400, grade 0 and fill 0.
 Google's Apache 2.0 license is retained in `src/components/Icon/LICENSE`.
 
-`icon-data.ts` retains the official SVG path data without redrawing. To add an
-icon, fetch its SVG at the pinned revision, preserve its viewBox and path data,
-and add its paths to the typed catalog. Keep the same settings. The existing
-catalog uses viewBox `0 -960 960 960`; check this before adding new assets.
-No external font, CDN or Google request is needed at runtime.
+`icon-data.ts` keeps the original 20 common SVGs synchronous. Other icons are
+exported from Google's Rounded variable font at the exact fixed axes above,
+then served as local JSON SVG paths in `public/icons/material-symbols-rounded`.
+`load-icon.ts` fetches only requested icons, caches successful responses and
+shares concurrent requests. Switching names never shows the previous glyph.
+Icon dimensions are reserved while loading. Uncached icons are client-loaded;
+server rendering includes their SVG container until hydration. Common icons
+render synchronously on the server too. Failed loads set `data-icon-status="error"`.
+The full asset directory ships with the app; it is not added to the initial JS
+bundle. Keep it when deploying, including under a Vite base path.
+
+## Reproduce the full catalog
+
+Install `fonttools==4.67.0` in a Python environment. Download
+`variablefont/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf` from the pinned
+Google revision above, then run:
+
+```sh
+python3 scripts/build-icons.py /path/to/MaterialSymbolsRounded.ttf
+```
+
+The generator uses the checked-in upstream codepoint list and emits all paths,
+the TypeScript name union, and a manifest with source revision, axes and font
+SHA-256. Normal npm builds use checked-in outputs and require neither Python nor
+network access. Google fonts and CDNs are not requested at runtime.

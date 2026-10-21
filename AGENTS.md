@@ -9,3 +9,4 @@
 - Follow `docs/styles.md` for usage and CSS translation limits. Check `Foundations/Styles` in Storybook to inspect all imported styles.
 - Preserve existing user work. Work on the feature branch. Do not merge into `main` without explicit user approval after validation.
 - Slot currently supports **Icon only**, including when used inside Button. Do not reintroduce Avatar, Flag, Thumbnail, Badge, Checkbox, Radio, Switch, Text or KBD Slot variants until their corresponding components are implemented and the user asks to expand support. Slot receives icon elements; Button startSlot/endSlot remain ReactNode props and visibility booleans must be converted to actual icon elements by the caller.
+- Use the shared Icon component and Google's Material Symbols Rounded SVGs (FILL 0, wght 400, GRAD 0, opsz 24). Follow `docs/icons.md`; do not introduce handwritten demo icons or mix icon families. Slot still controls rendered dimensions.

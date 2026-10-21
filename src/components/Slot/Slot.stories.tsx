@@ -7,11 +7,7 @@ import { Text } from "../Text/Text"
 const sizes: SlotSize[] = ["sm", "md", "lg"]
 const dimensions = { sm: [16, 16], md: [20, 18], lg: [24, 20] } as const
 
-function DemoIcon() {
-  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <circle cx="11" cy="11" r="7" /><path d="m16 16 5 5" />
-  </svg>
-}
+import { Icon } from "../Icon/Icon"
 
 const meta = {
   title: "Components/Slot",
@@ -27,7 +23,7 @@ const meta = {
     size: { control: "select", options: sizes },
     children: { control: false },
   },
-  render: args => <Slot {...args} role="img" aria-label="搜索"><DemoIcon /></Slot>,
+  render: args => <Slot {...args} role="img" aria-label="搜索"><Icon name="search" /></Slot>,
 } satisfies Meta<typeof Slot>
 export default meta
 
@@ -45,7 +41,7 @@ export const AllVariants: Story = {
     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "var(--spacing-16)" }}>
       {sizes.map(size => <div key={size} style={{ display: "grid", justifyItems: "center", gap: "var(--spacing-12)" }}>
         <Text size="xs" weight="medium">{size.toUpperCase()}</Text>
-        <Slot size={size} role="img" aria-label={`搜索 ${size}`}><DemoIcon /></Slot>
+        <Slot size={size} role="img" aria-label={`搜索 ${size}`}><Icon name="search" /></Slot>
         <Text size="xs">{dimensions[size][0]} / {dimensions[size][1]} px</Text>
       </div>)}
     </div>

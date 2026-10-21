@@ -3,23 +3,7 @@ import { expect, fn, within } from "storybook/test"
 import { Button, type ButtonProps } from "./Button"
 import { Text } from "../Text/Text"
 
-function PlusIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-      strokeLinecap="round" aria-hidden="true" data-icon="plus">
-      <path d="M12 5v14M5 12h14" />
-    </svg>
-  )
-}
-
-function ArrowIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-      strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" data-icon="arrow">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  )
-}
+import { Icon } from "../Icon/Icon"
 
 // Visibility controls belong to Storybook; Button receives renderable nodes.
 type ButtonStoryArgs = ButtonProps & {
@@ -28,13 +12,13 @@ type ButtonStoryArgs = ButtonProps & {
 }
 
 function renderButton({ showStartIcon, showEndIcon, ...args }: ButtonStoryArgs) {
-  const startSlot = args.startSlot ?? (showStartIcon ? <PlusIcon /> : undefined)
-  const endSlot = args.endSlot ?? (showEndIcon ? <ArrowIcon /> : undefined)
+  const startSlot = args.startSlot ?? (showStartIcon ? <Icon name="add" /> : undefined)
+  const endSlot = args.endSlot ?? (showEndIcon ? <Icon name="arrow_forward" /> : undefined)
 
   return (
     <Button
       {...args}
-      startSlot={startSlot ?? (args.iconOnly && endSlot == null ? <PlusIcon /> : undefined)}
+      startSlot={startSlot ?? (args.iconOnly && endSlot == null ? <Icon name="add" /> : undefined)}
       endSlot={endSlot}
       aria-label={args["aria-label"] ?? (args.iconOnly ? "新增项目" : undefined)}
     />
@@ -143,7 +127,7 @@ export const StartIcon: Story = {
   args: { showStartIcon: true, children: "Add item" },
   play: async ({ canvasElement, args, userEvent }) => {
     const button = within(canvasElement).getByRole("button", { name: "Add item" })
-    await expect(button.querySelector(".slot--icon svg[data-icon='plus']")).toBeInTheDocument()
+    await expect(button.querySelector(".slot--icon svg[data-icon='add']")).toBeInTheDocument()
     await userEvent.click(button)
     await expect(args.onClick).toHaveBeenCalledOnce()
   },
@@ -163,24 +147,24 @@ export const BothIcons: Story = {
 
 export const IconOnly: Story = {
   // Supply the actual SVG to the component, independent of visibility controls.
-  args: { iconOnly: true, startSlot: <PlusIcon />, "aria-label": "新增项目" },
+  args: { iconOnly: true, startSlot: <Icon name="add" />, "aria-label": "新增项目" },
   play: async ({ canvasElement }) => {
     const button = within(canvasElement).getByRole("button", { name: "新增项目" })
-    await expect(button.querySelector(".slot--icon svg[data-icon='plus']")).toBeInTheDocument()
+    await expect(button.querySelector(".slot--icon svg[data-icon='add']")).toBeInTheDocument()
     await expect(button.querySelector(".button__label")).not.toBeInTheDocument()
   },
 }
 
 export const IconOnlyEndSlot: Story = {
-  args: { iconOnly: true, endSlot: <ArrowIcon />, "aria-label": "下一步" },
+  args: { iconOnly: true, endSlot: <Icon name="arrow_forward" />, "aria-label": "下一步" },
   play: async ({ canvasElement }) => {
     const button = within(canvasElement).getByRole("button", { name: "下一步" })
-    await expect(button.querySelector("svg[data-icon='arrow']")).toBeInTheDocument()
+    await expect(button.querySelector("svg[data-icon='arrow_forward']")).toBeInTheDocument()
   },
 }
 
 export const IconOnlyLoading: Story = {
-  args: { iconOnly: true, startSlot: <PlusIcon />, loading: true, "aria-label": "正在新增" },
+  args: { iconOnly: true, startSlot: <Icon name="add" />, loading: true, "aria-label": "正在新增" },
 }
 
 export const Sizes: Story = {
@@ -208,10 +192,10 @@ export const Sizes: Story = {
   render: () => (
     <div style={{ display: "flex", gap: 16, alignItems: "center", flexWrap: "wrap" }}>
       {sizes.map(size => (
-        <Button key={size} size={size} startSlot={<PlusIcon />} endSlot={<ArrowIcon />}>{size.toUpperCase()}</Button>
+        <Button key={size} size={size} startSlot={<Icon name="add" />} endSlot={<Icon name="arrow_forward" />}>{size.toUpperCase()}</Button>
       ))}
       {sizes.map(size => (
-        <Button key={`icon-${size}`} size={size} iconOnly startSlot={<PlusIcon />} aria-label={`新增项目 ${size}`} />
+        <Button key={`icon-${size}`} size={size} iconOnly startSlot={<Icon name="add" />} aria-label={`新增项目 ${size}`} />
       ))}
     </div>
   ),
@@ -228,10 +212,10 @@ export const AllVariants: Story = {
           <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
             <Button variant={variant}>Button</Button>
             {sizes.map(size => (
-              <Button key={size} variant={variant} size={size} startSlot={<PlusIcon />} endSlot={<ArrowIcon />}>Add item</Button>
+              <Button key={size} variant={variant} size={size} startSlot={<Icon name="add" />} endSlot={<Icon name="arrow_forward" />}>Add item</Button>
             ))}
-            <Button variant={variant} iconOnly startSlot={<PlusIcon />} aria-label={`新增项目 ${variant}`} />
-            <Button variant={variant} startSlot={<PlusIcon />} disabled>Disabled</Button>
+            <Button variant={variant} iconOnly startSlot={<Icon name="add" />} aria-label={`新增项目 ${variant}`} />
+            <Button variant={variant} startSlot={<Icon name="add" />} disabled>Disabled</Button>
             <Button variant={variant} loading>Loading</Button>
           </div>
         </section>

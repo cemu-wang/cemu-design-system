@@ -3,22 +3,25 @@ import { expect, fn, within } from "storybook/test"
 import { Button, type ButtonProps } from "./Button"
 import { Text } from "../Text/Text"
 
-import { Icon } from "../Icon/Icon"
+import { Icon, type IconName } from "../Icon/Icon"
+import { iconNames } from "../Icon/icon-names"
 
 // Visibility controls belong to Storybook; Button receives renderable nodes.
 type ButtonStoryArgs = ButtonProps & {
   showStartIcon?: boolean
   showEndIcon?: boolean
+  startIconName?: IconName
+  endIconName?: IconName
 }
 
-function renderButton({ showStartIcon, showEndIcon, ...args }: ButtonStoryArgs) {
-  const startSlot = args.startSlot ?? (showStartIcon ? <Icon name="add" /> : undefined)
-  const endSlot = args.endSlot ?? (showEndIcon ? <Icon name="arrow_forward" /> : undefined)
+function renderButton({ showStartIcon, showEndIcon, startIconName = "add", endIconName = "arrow_forward", ...args }: ButtonStoryArgs) {
+  const startSlot = showStartIcon ? <Icon name={startIconName} /> : undefined
+  const endSlot = showEndIcon ? <Icon name={endIconName} /> : undefined
 
   return (
     <Button
       {...args}
-      startSlot={startSlot ?? (args.iconOnly && endSlot == null ? <Icon name="add" /> : undefined)}
+      startSlot={startSlot ?? (args.iconOnly && endSlot == null ? <Icon name={startIconName} /> : undefined)}
       endSlot={endSlot}
       aria-label={args["aria-label"] ?? (args.iconOnly ? "新增项目" : undefined)}
     />
@@ -40,6 +43,8 @@ const meta = {
     size: "md",
     showStartIcon: false,
     showEndIcon: false,
+    startIconName: "add",
+    endIconName: "arrow_forward",
     iconOnly: false,
     onClick: fn(),
   },
@@ -63,6 +68,8 @@ const meta = {
     children: { control: "text" },
     showStartIcon: { name: "显示前置图标", control: "boolean" },
     showEndIcon: { name: "显示后置图标", control: "boolean" },
+    startIconName: { name: "前置图标", control: "select", options: iconNames },
+    endIconName: { name: "后置图标", control: "select", options: iconNames },
     iconOnly: { control: "boolean" },
     loading: { control: "boolean" },
     disabled: { control: "boolean" },
@@ -147,7 +154,7 @@ export const BothIcons: Story = {
 
 export const IconOnly: Story = {
   // Supply the actual SVG to the component, independent of visibility controls.
-  args: { iconOnly: true, startSlot: <Icon name="add" />, "aria-label": "新增项目" },
+  args: { iconOnly: true, showStartIcon: true, "aria-label": "新增项目" },
   play: async ({ canvasElement }) => {
     const button = within(canvasElement).getByRole("button", { name: "新增项目" })
     await expect(button.querySelector(".slot--icon svg[data-icon='add']")).toBeInTheDocument()
@@ -156,7 +163,7 @@ export const IconOnly: Story = {
 }
 
 export const IconOnlyEndSlot: Story = {
-  args: { iconOnly: true, endSlot: <Icon name="arrow_forward" />, "aria-label": "下一步" },
+  args: { iconOnly: true, showEndIcon: true, "aria-label": "下一步" },
   play: async ({ canvasElement }) => {
     const button = within(canvasElement).getByRole("button", { name: "下一步" })
     await expect(button.querySelector("svg[data-icon='arrow_forward']")).toBeInTheDocument()
@@ -164,7 +171,7 @@ export const IconOnlyEndSlot: Story = {
 }
 
 export const IconOnlyLoading: Story = {
-  args: { iconOnly: true, startSlot: <Icon name="add" />, loading: true, "aria-label": "正在新增" },
+  args: { iconOnly: true, showStartIcon: true, loading: true, "aria-label": "正在新增" },
 }
 
 export const Sizes: Story = {
